@@ -1,0 +1,1550 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/general/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
+    
+    
+      
+        <title>TCF 2 - Usercentrics CMP Browser</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script id="usercentrics-cmp" data-settings-id="iuVJ-_y0f" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" async ></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usercentrics-tcf-20" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Usercentrics CMP Browser" class="md-header__button md-logo" aria-label="Usercentrics CMP Browser" data-md-component="logo">
+      
+  <img src="../../../assets/general/usercentrics-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Usercentrics CMP Browser
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TCF 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ui/" class="md-tabs__link">
+        Browser UI
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sdk/implementation-optional-steps/" class="md-tabs__link">
+        Browser SDK
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../gcm/consent-mode/" class="md-tabs__link">
+      Google Consent Mode
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gtm/configuration/" class="md-tabs__link">
+        Google Tag Manager
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Features
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Usercentrics CMP Browser" class="md-nav__button md-logo" aria-label="Usercentrics CMP Browser" data-md-component="logo">
+      
+  <img src="../../../assets/general/usercentrics-logo.svg" alt="logo">
+
+    </a>
+    Usercentrics CMP Browser
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">Getting Started</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/ui/" class="md-nav__link">
+        Browser UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/sdk/" class="md-nav__link">
+        Browser SDK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/browser-support/" class="md-nav__link">
+        Browser Support
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../ui/">Browser UI</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Browser UI" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Browser UI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/implementation-optional-steps/" class="md-nav__link">
+        Implementation (Optional Steps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/adjusting-implemented-scripts/" class="md-nav__link">
+        Adjusting Implemented Scripts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../guides/">Guides</a>
+          
+            <label for="__nav_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/guide-example/" class="md-nav__link">
+        First Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/guide-example/" class="md-nav__link">
+        Second Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-css/" class="md-nav__link">
+        Custom CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          Browser UI API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser UI API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Browser UI API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/control-the-ui/" class="md-nav__link">
+        Control the UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/custom-functionality/" class="md-nav__link">
+        Custom Functionality
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Browser SDK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser SDK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Browser SDK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk/implementation-optional-steps/" class="md-nav__link">
+        Implementation (Optional Steps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdk/modules/" class="md-nav__link">
+        Technical SDK
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gcm/consent-mode/" class="md-nav__link">
+        Google Consent Mode
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Google Tag Manager
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Google Tag Manager" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Google Tag Manager
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gtm/configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gtm/templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TCF 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        TCF 2
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-information" class="md-nav__link">
+    General Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide-of-working-with-the-usercentrics-tcf-v2-cmp" class="md-nav__link">
+    Step by Step Guide of working with the Usercentrics TCF v2 CMP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choose-the-tcf-scope" class="md-nav__link">
+    Choose the TCF Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-vendors" class="md-nav__link">
+    Configure the vendors
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the vendors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-vendor-list-gvl" class="md-nav__link">
+    Global Vendor List (GVL)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-iab-vendors" class="md-nav__link">
+    Non-IAB Vendors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-design-layout" class="md-nav__link">
+    Configure the Design / Layout
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the Design / Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-cmp-ui" class="md-nav__link">
+    The CMP UI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    Content
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-the-tcf-v2-cmp-in-your-site" class="md-nav__link">
+    Integrate the TCF v2 CMP in your site
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-integration" class="md-nav__link">
+    Service integration
+  </a>
+  
+    <nav class="md-nav" aria-label="Service integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iab-vendors" class="md-nav__link">
+    IAB Vendors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-iab-vendors_1" class="md-nav__link">
+    Non-IAB Vendors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag-management-systems" class="md-nav__link">
+    Tag Management Systems
+  </a>
+  
+    <nav class="md-nav" aria-label="Tag Management Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-variables" class="md-nav__link">
+    Create Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-trigger" class="md-nav__link">
+    Add Trigger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeat-this-for-each-non-iab-vendor" class="md-nav__link">
+    Repeat this for each non-IAB vendor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../embeddings/" class="md-nav__link">
+        Embeddings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smart-data-protector/" class="md-nav__link">
+        Smart Data Protector
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-information" class="md-nav__link">
+    General Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide-of-working-with-the-usercentrics-tcf-v2-cmp" class="md-nav__link">
+    Step by Step Guide of working with the Usercentrics TCF v2 CMP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choose-the-tcf-scope" class="md-nav__link">
+    Choose the TCF Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-vendors" class="md-nav__link">
+    Configure the vendors
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the vendors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-vendor-list-gvl" class="md-nav__link">
+    Global Vendor List (GVL)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-iab-vendors" class="md-nav__link">
+    Non-IAB Vendors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-the-design-layout" class="md-nav__link">
+    Configure the Design / Layout
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure the Design / Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-cmp-ui" class="md-nav__link">
+    The CMP UI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    Content
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrate-the-tcf-v2-cmp-in-your-site" class="md-nav__link">
+    Integrate the TCF v2 CMP in your site
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-integration" class="md-nav__link">
+    Service integration
+  </a>
+  
+    <nav class="md-nav" aria-label="Service integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iab-vendors" class="md-nav__link">
+    IAB Vendors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-iab-vendors_1" class="md-nav__link">
+    Non-IAB Vendors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag-management-systems" class="md-nav__link">
+    Tag Management Systems
+  </a>
+  
+    <nav class="md-nav" aria-label="Tag Management Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-variables" class="md-nav__link">
+    Create Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-trigger" class="md-nav__link">
+    Add Trigger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeat-this-for-each-non-iab-vendor" class="md-nav__link">
+    Repeat this for each non-IAB vendor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="usercentrics-tcf-20">Usercentrics - TCF 2.0</h1>
+<h2 id="general-information">General Information</h2>
+<p>The Usercentrics CMP is IAB TCF 2.0 certified and therefore meets the requirements of the specification of the IAB TCF 2.0 framework.</p>
+<p>The standard regulates how user consent information has to be captured and used within the programmatic advertising ecosystem, with the goal of a frictionless functioning of the ecosystem through following a standardised approach of implementing data privacy regulations.</p>
+<p>We are briefly explaining here some key concepts of the framework:</p>
+<ul>
+<li>
+<p>The tcString is a technical concept which encodes the consent information in a machine readable format. The tcString contains all required information for any system in the ecosystem to validate what consent has been given by a user and what processing is allowed based on that. The tcString is generated and provided by a CMP at the point where users make consent decisions. Each vendor service that collects data must take the information encoded in the tcString into account and decide if and what consent the user has given.</p>
+</li>
+<li>
+<p>The TCF v2 API is the technical concept that allows the vendors integrated in a website or app to interact with the CMP in order to e.g. obtain the tcString in a standardised way. Any IAB TCF v2 certified CMP implements this API.</p>
+</li>
+<li>
+<p>The Global Vendor List (GVL) is a list of all service vendors who registered for the IAB TCF v2 framework. By registering for the TCF 2.0 framework these vendors confirm that they comply with the framework policies. The list is maintained by the IAB and regular updates are provided, typically on a weekly basis. The list contains all necessary information about the vendors, that is required by the framework such as descriptions of the services and the data the service uses, the purposes for which the service uses the data, the duration of operation of cookies or similar information that the service stores on a user’s device.</p>
+</li>
+<li>
+<p>The TCF v2 framework also prescribes rather strict UX behaviours for CMPs. This impacts the design but also the content shown in a CMP and leaves little room for own optimisation. Aspects like the contrast ratio of colours and the messages that must be shown to users at certain layers of the CMP dialogues are some examples of clearly specified conditions to be met.</p>
+</li>
+</ul>
+<p>For further and more detailed reading on the TCF v2 framework, please visit this <a href="https://usercentrics.com/knowledge/understanding-the-iab-framework-in-15-minutes/">page</a>.</p>
+<h2 id="step-by-step-guide-of-working-with-the-usercentrics-tcf-v2-cmp">Step by Step Guide of working with the Usercentrics TCF v2 CMP</h2>
+<p>The following steps guide you towards configuring your CMP to support TCF v2. You need to login to our Admin Tool and ensure you have the access to the CMP version 2 area. If you don’t, speak to your Usercentrics contact to enable this for you:</p>
+<p><img alt="CMPv2" src="/assets/pages/features/tcf2/v2-selection.png" /></p>
+<h2 id="choose-the-tcf-scope">Choose the TCF Scope</h2>
+<p>In the configuration section you also find the option to choose from the two modes the TCF framework supports:</p>
+<ul>
+<li>
+<p>Service-Specific Scope means that a user given consent applies only to the specific website/app and cannot be propagated to other sites. This is the scope that is broadly supported within the ad tech ecosystem and most likely the one you want to choose.</p>
+</li>
+<li>
+<p>Global Scope means that when a user sets his or her consent on one site, that consent is then used by all other sites the user visits, if these site are also using the TCF 2.0 Global Scope. Technically this is done by storing the tcString in a third party cookie through which it can be transported from one to the next site. Conceptually it means that if a user opts in/out on one site to a given service then this decision is propagated to all further sites the user visits.</p>
+</li>
+</ul>
+<p><img alt="Scope" src="/assets/pages/features/tcf2/select-scope.png" /></p>
+<h2 id="configure-the-vendors">Configure the vendors</h2>
+<h3 id="global-vendor-list-gvl">Global Vendor List (GVL)</h3>
+<p>Under “Service Settings” you can configure the vendors or Data Processing Services you are using on you site. The list shown under “Transparency &amp; Consent Framework 2.0” contains the vendors of the IAB GVL. The CMP automatically manages updates to that list. The list of available vendors is provided by the IAB and vendor information must be used as it is.</p>
+<p>By checking the box on the left of each vendor, you can activate the vendor. This means the user will be informed in the CMP banners that you are using this vendor on your site. You can deactivate the vendor at any time by unchecking the same checkbox.</p>
+<p>Note: As you are changing the list of used vendors when activating new ones and saving the changes, this will lead to the CMP banners to be shown again to users who already have given consent to your previous settings in order to show/provide the option to give consent for these new vendors as well.</p>
+<p><img alt="Vendorlist" src="/assets/pages/features/tcf2/vendorlist.png" /></p>
+<p>There is also a concept of so called “Stacks” within the framework which allows you to achieve a slimmer UX when displaying to users which purposes apply to the vendors used on your site. You may want experiment with this feature in particular if you are using many vendors.</p>
+<p><img alt="Stacks" src="/assets/pages/features/tcf2/stacks.png" /></p>
+<h3 id="non-iab-vendors">Non-IAB Vendors</h3>
+<p>The configuration of non-IAB vendors works the usual way. You may define the service categories and choose from our list of fully prepared services or define your own custom services. There is nothing TCF v2 specific to consider with the configuration of the non-IAB services.</p>
+<p><img alt="NonIabVendors" src="/assets/pages/features/tcf2/noniab-vendors.png" /></p>
+<h2 id="configure-the-design-layout">Configure the Design / Layout</h2>
+<h3 id="the-cmp-ui">The CMP UI</h3>
+<p>Our CMP layout consists of two layers:</p>
+<p>The first layer contains all the textual information required by the framework, as well as the list of purposes that apply to the vendors you configured. The user may choose on this first layer to opt in/out of certain purposes or go to the second layer to view more details.</p>
+<p><img alt="Firstlayer" src="/assets/pages/features/tcf2/ui-firstlayer.png" /></p>
+<p>The second layer gives users details about the enabled vendors and purposes. On this layer the user has more detailed opt in/out options.</p>
+<p><img alt="Secondlayer" src="/assets/pages/features/tcf2/ui-secondlayer.png" /></p>
+<p>The CMP UI is customisable and you may choose your colour themes, fonts, headlines, logo and button options.</p>
+<h3 id="design">Design</h3>
+<p>Under the “Appearance”--&gt; “Design” section you can customise the following:</p>
+<ul>
+<li>
+<p>Color theme</p>
+</li>
+<li>
+<p>Font-Family</p>
+</li>
+<li>
+<p>Font-Size</p>
+</li>
+<li>
+<p>Choose your own logo</p>
+</li>
+</ul>
+<p><img alt="Appearance" src="/assets/pages/features/tcf2/appearance.png" /></p>
+<h3 id="layout">Layout</h3>
+<p>Under the “Appearance” → “Layout” section you may choose your layout options.</p>
+<p>The current layouts of the UI are fixed as the TCF v2 framework prescribes a rather prominent display. As the framework itself is under review with regards to such restrictions this might change in future and we may be able to offer more options.</p>
+<p>A further layout option you may customise is the privacy trigger. The trigger is shown when the user closes the CMP UI. Through this trigger the user can go back to modifying the consent settings in the CMP UI. You may customise the trigger icon and position.</p>
+<p><img alt="Appearance2" src="/assets/pages/features/tcf2/appearance2.png" /></p>
+<h3 id="content">Content</h3>
+<p>The CMP also offers customisation options under the “Content” section. Some texts must remain as provided due to TCF v2 requirements and can not be edited.</p>
+<p><img alt="Appearance" src="/assets/pages/features/tcf2/content.png" /></p>
+<p>Following are the customisable elements:</p>
+<ul>
+<li>
+<p>Layer titels</p>
+</li>
+<li>
+<p>Additional banner messages</p>
+</li>
+<li>
+<p>Imprint link</p>
+</li>
+<li>
+<p>Privacy policy URL</p>
+</li>
+<li>
+<p>Privacy policy link text</p>
+</li>
+<li>
+<p>Button labels</p>
+</li>
+</ul>
+<h2 id="integrate-the-tcf-v2-cmp-in-your-site">Integrate the TCF v2 CMP in your site</h2>
+<p>Once all the above is configured, the last step required to integrate the CMP in your site, is to place the TCF v2 related CMP Script tag in your website. The script tag can be copied from the “Implementation” section.</p>
+<p><img alt="Implementation" src="/assets/pages/features/tcf2/scripttag.png" /></p>
+<p>If you want to provide support for older browsers like IE11, please use the following script tag instead:</p>
+<div class="highlight"><pre><span></span><code>&lt;script id=&quot;usercentrics-cmp&quot; data-settings-id=&quot;XXXXXXXX&quot; src=&quot;https://app.usercentrics.eu/browser-ui/latest/loader.js&quot; data-tcf-enabled&gt;&lt;/script&gt;
+</code></pre></div>
+<h2 id="service-integration">Service integration</h2>
+<p>Here a few important notes on what you need to consider when integration vendors / services under TCF 2.0.</p>
+<h3 id="iab-vendors">IAB Vendors</h3>
+<p>The Usercentrics CMP exposes the IAB TCF 2.0 API which offers a standardised way for publishers and vendors to fetch the users consent information. IAB certified vendors are able to work with the TCF 2.0 API, which means in most cases no further modification or adjustments to vendor scripts are needed. </p>
+<p>This means vendors can request the consent state when the CMP is loaded using the __tcfapi function with the command getTCData. Sample:  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">__tcfapi</span><span class="p">(</span><span class="s1">&#39;getTCData&#39;</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="p">(</span><span class="nx">tcData</span><span class="p">,</span> <span class="nx">success</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tcData</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">});</span>
+</code></pre></div>
+<p>In order to react on changes of the consent state vendors can make use of the event listener provided by the API using the __tcfapi function with the command addEventListener. Sample:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">__tcfapi</span><span class="p">(</span><span class="s1">&#39;addEventListener&#39;</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">tcData</span><span class="p">,</span><span class="nx">success</span><span class="p">){</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="c1">// inital tc string information</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">if</span><span class="p">(</span><span class="nx">success</span> <span class="o">&amp;&amp;</span> <span class="nx">tcData</span><span class="p">.</span><span class="nx">eventStatus</span> <span class="o">===</span> <span class="s1">&#39;tcloaded&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39; TCF tcLoaded Event - tcString: &#39;</span><span class="o">+</span><span class="nx">tcData</span><span class="p">.</span><span class="nx">tcString</span><span class="p">);</span>        
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">}</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="c1">// tc string after user interaction completed</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">success</span> <span class="o">&amp;&amp;</span> <span class="nx">tcData</span><span class="p">.</span><span class="nx">eventStatus</span> <span class="o">===</span> <span class="s1">&#39;useractioncomplete&#39;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;TCF useractioncomplete Event - tcString: &#39;</span><span class="o">+</span><span class="nx">tcData</span><span class="p">.</span><span class="nx">tcString</span><span class="p">);</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="p">}</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="c1">// do something else</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">});</span>
+</code></pre></div>
+<p>More details about the TCF 2.0 CMP API and its commands can be found <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#cmp-api-v20">here</a>.</p>
+<h3 id="non-iab-vendors_1">Non-IAB Vendors</h3>
+<p>Non-IAB vendors do not follow the framework’s concepts and therefore do not use the TCF API or tcString. For those, there is nothing TCF v2 specific to be considered. Use our <a href="https://usercentrics.com/knowledge-hub/direct-integration-usercentrics-script-website/">Direct Integration Guide</a> to handle non-IAB vendors.</p>
+<h3 id="tag-management-systems">Tag Management Systems</h3>
+<p>If you are using a tag manager for vendor script integration, you should consider the following information.</p>
+<p>IAB registered vendors have to be loaded in order to request the tcString from our CMP and understand the information. Therefore, no tag manager triggers should be configured around those vendor tags.</p>
+<p>Non-IAB vendors need to be handled manually. The CMP version 2 uses a an event “consent_status” which should be used in your tag manager to trigger the services. 
+Here's an example configuration for the Google Tag Manager:</p>
+<h4 id="create-variables">Create Variables</h4>
+<p>You have to create consent default status variables for each of your non-IAB vendor script tags so that they are not triggered without consent. </p>
+<ol>
+<li>
+<p>Navigate to "Variables" in the side menu of the Google Tag Manager and then click on "New".</p>
+</li>
+<li>
+<p>Add a new variable of type "Data Layer Variable".</p>
+</li>
+<li>
+<p>In the top left, name the variable "XXX Variable".</p>
+<p>a. “XXX” → Please insert here the name of Data Processing Service e.g Google Analytics </p>
+</li>
+<li>
+<p>Under "Data Layer Variable Name", insert the name of Data Processing Service e.g “Google Analytics”.</p>
+</li>
+</ol>
+<p>a. The name has to match exactly (hyphenation, and capitalisation) the Service name you added in your Admin Interface under Service Settings</p>
+<ol>
+<li>
+<p>Tick "Set Default Value" and set the default value to false.</p>
+</li>
+<li>
+<p>Save "Google Analytics Variable".</p>
+</li>
+<li>
+<p>Repeat for all non-IAB vendor scripts</p>
+</li>
+</ol>
+<h4 id="add-trigger">Add Trigger</h4>
+<p>There are several ways on how to implement triggers in a Tag Management System. Usercentrics recommends the following option, however, depending on your setup, other structures might be more reasonable.</p>
+<ol>
+<li>
+<p>Navigate to "Triggers" in the side-menu and click on "New".</p>
+</li>
+<li>
+<p>Add a new trigger of type "Custom Event".</p>
+</li>
+<li>
+<p>In the top left, name the trigger "XXX Trigger".</p>
+<p>a. “XXX” → Please insert here the name of Data Processing Service e.g “Google Analytics Trigger”</p>
+</li>
+<li>
+<p>Tick "Use regex matching" next to the "Event Name" input field</p>
+</li>
+<li>
+<p>Under "Event Name", insert "(consent_status.*)".</p>
+<p>a. please be ensure to spell consent_status exactly like this.</p>
+</li>
+<li>
+<p>Tick "Some Custom Events".</p>
+</li>
+<li>
+<p>In the drop-down menus, set the following condition: "Google Analytics Variable" contains true.</p>
+<p>a. Explanation: The variable contains the user's consent information (variable=true - user opted in || variable=false - user opted out) for a specific technology. Hence, the trigger should only be fired (and tag therefore activated), if the variable=true</p>
+</li>
+<li>
+<p>Save "Google Analytics Trigger".</p>
+</li>
+<li>
+<p>Add the trigger to "Google Analytics Tag".</p>
+</li>
+<li>
+<p>Repeat this for each non-IAB vendor script in your Tag Manager</p>
+</li>
+</ol>
+<h4 id="repeat-this-for-each-non-iab-vendor">Repeat this for each non-IAB vendor</h4>
+<ul>
+<li>Create a default status variable</li>
+<li>Create a new trigger on the event consent_status for the vendor script tag</li>
+<li>Add the trigger condition for the respective tag with the condition: "Google Analytics Variable" contains true.</li>
+<li>Add the trigger to the tag</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      © Copyright 2022 Usercentrics GmbH
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "navigation.sections", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1514a9a0.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

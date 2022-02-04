@@ -1,0 +1,40 @@
+:root {
+  /* --md-primary-fg-color: #0c1a45; Color for Top Header Bar */
+  --md-primary-fg-color: #1d60b3; /* Color for Top Header Bar */
+  --md-default-fg-color: #0c1a45; /* Color for Text */
+
+  --md-accent-fg-color: #004fcd; /* Color for highlighted text */
+  --md-accent-bg-color: #004fcd; /* Color for highlighted */
+  /* --md-accent-bg-color: #004fcd; Color for highlighted */
+}
+
+:root>* {
+ --md-typeset-a-color: #004fcd; /* Color for Selected Text or Hyperlinks */
+ /* --md-typeset-a-color: #004fcd; Color for Selected Text or Hyperlinks */
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0c1a45;
+  
+  --md-accent-fg-color: #f15014; /* Color for highlighted text */
+  --md-accent-bg-color: #f15014; /* Color for highlighted */
+
+  --md-typeset-a-color: #f15014; /* Color for Selected Text or Hyperlinks */
+}
+
+.md-header-nav__title {
+  padding: 0
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.imageBorder {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DEDEDE;
+}
+
+

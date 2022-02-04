@@ -1,0 +1,1262 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/general/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
+    
+    
+      
+        <title>Configuration - Usercentrics CMP Browser</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script id="usercentrics-cmp" data-settings-id="iuVJ-_y0f" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" async ></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#google-tag-manager-configuration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Usercentrics CMP Browser" class="md-header__button md-logo" aria-label="Usercentrics CMP Browser" data-md-component="logo">
+      
+  <img src="../../../assets/general/usercentrics-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Usercentrics CMP Browser
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configuration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ui/" class="md-tabs__link">
+        Browser UI
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sdk/implementation-optional-steps/" class="md-tabs__link">
+        Browser SDK
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../gcm/consent-mode/" class="md-tabs__link">
+      Google Consent Mode
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Google Tag Manager
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/tcf2/" class="md-tabs__link">
+        Features
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Usercentrics CMP Browser" class="md-nav__button md-logo" aria-label="Usercentrics CMP Browser" data-md-component="logo">
+      
+  <img src="../../../assets/general/usercentrics-logo.svg" alt="logo">
+
+    </a>
+    Usercentrics CMP Browser
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">Getting Started</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/ui/" class="md-nav__link">
+        Browser UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/sdk/" class="md-nav__link">
+        Browser SDK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/browser-support/" class="md-nav__link">
+        Browser Support
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../ui/">Browser UI</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Browser UI" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Browser UI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/implementation-optional-steps/" class="md-nav__link">
+        Implementation (Optional Steps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/adjusting-implemented-scripts/" class="md-nav__link">
+        Adjusting Implemented Scripts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../guides/">Guides</a>
+          
+            <label for="__nav_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/guide-example/" class="md-nav__link">
+        First Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/guide-example/" class="md-nav__link">
+        Second Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/custom-css/" class="md-nav__link">
+        Custom CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          Browser UI API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser UI API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Browser UI API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/control-the-ui/" class="md-nav__link">
+        Control the UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/custom-functionality/" class="md-nav__link">
+        Custom Functionality
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Browser SDK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser SDK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Browser SDK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sdk/implementation-optional-steps/" class="md-nav__link">
+        Implementation (Optional Steps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdk/modules/" class="md-nav__link">
+        Technical SDK
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gcm/consent-mode/" class="md-nav__link">
+        Google Consent Mode
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Google Tag Manager
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Google Tag Manager" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Google Tag Manager
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Configuration
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
+    Background Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-data-processing-technologies" class="md-nav__link">
+    Adding Data-Processing Technologies
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Data-Processing Technologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-consent-mode" class="md-nav__link">
+    Google Consent Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-google-analytics-tag" class="md-nav__link">
+    Create a new Google Analytics tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-google-analytics-variable" class="md-nav__link">
+    Create a new Google Analytics variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-google-analytics-trigger" class="md-nav__link">
+    Create a Google Analytics trigger
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-in-preview-mode" class="md-nav__link">
+    Testing in Preview Mode
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/tcf2/" class="md-nav__link">
+        TCF 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/events/" class="md-nav__link">
+        Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/embeddings/" class="md-nav__link">
+        Embeddings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/smart-data-protector/" class="md-nav__link">
+        Smart Data Protector
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-information" class="md-nav__link">
+    Background Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-data-processing-technologies" class="md-nav__link">
+    Adding Data-Processing Technologies
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Data-Processing Technologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-consent-mode" class="md-nav__link">
+    Google Consent Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-google-analytics-tag" class="md-nav__link">
+    Create a new Google Analytics tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-google-analytics-variable" class="md-nav__link">
+    Create a new Google Analytics variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-google-analytics-trigger" class="md-nav__link">
+    Create a Google Analytics trigger
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-in-preview-mode" class="md-nav__link">
+    Testing in Preview Mode
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="google-tag-manager-configuration">Google Tag Manager Configuration</h1>
+<p>Get detailed information on how to configure your Google Tag Manager with the Usercentrics Browser SDK.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>In order to follow this documentation, we assume you have:</p>
+<ul>
+<li>A <a href="https://www.google.com/intl/de/tagmanager/">Google Tag Manager account</a>.</li>
+<li>Created a Google Tag Manager container on you website.</li>
+<li>Inserted the Google Tag Manager script into your website.</li>
+<li>Inserted your Usercentrics script into your website. Learn how to do this <a href="direct-implementation-guide">here</a>.</li>
+</ul>
+<div class="admonition warning">
+<p>You can also directly integrate the Usercentrics Script via the Google Tag Manager. Usercentrics does <strong>NOT</strong> recommend this. However, you can learn how to do it <a href="https://usercentrics.atlassian.net/wiki/spaces/SKB/pages/176980005/How+do+I+directly+integrate+the+Usercentrics+CMP+into+my+Google+Tag+Manager">here</a>.</p>
+</div>
+<ul>
+<li>Your personal Usercentrics script:</li>
+</ul>
+<div class="highlight"><span class="filename">Non-TCF Script</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;usercentrics-cmp&quot;</span> <span class="na">data-settings-id</span><span class="o">=</span><span class="s">&quot;XXXXXXXX&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://app.usercentrics.eu/browser-ui/latest/loader.js&quot;</span> <span class="na">async</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">TCF Script</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;usercentrics-cmp&quot;</span> <span class="na">data-settings-id</span><span class="o">=</span><span class="s">&quot;XXXXXXXX&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://app.usercentrics.eu/browser-ui/latest/loader.js&quot;</span> <span class="na">data-tcf-enabled</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="background-information">Background Information</h2>
+<p>Google Tag Manager can be tricky at times. If you're having trouble understanding it, the following information is meant to clarify some basic issues:</p>
+<ul>
+<li>Google Tag Manager helps you configure when the <b>Javascript tags</b> on your website are activated.</li>
+<li>Each tag needs to have at least one <b>trigger</b>.</li>
+<li>Triggers listen for certain website <b>events</b> (e.g. the website is fully loaded). Once this event takes place the trigger determines if the tag is activated.</li>
+<li>Triggers can be <b>firing</b> or <b>exception</b> triggers:<ul>
+<li>Exception triggers determine when a tag is NOT fired and take precedence over other triggers.</li>
+<li>Firing triggers determine when a tag is fired.</li>
+</ul>
+</li>
+<li>Triggers can be reliant on <b>variables</b>. The firing of a tag will be blocked, if a condition based on the value of such a variable is not met. </li>
+<li>Usercentrics uses a special type of variable, a <b>data layer variable</b>, to communicate between your Google Tag Manager settings and your CMP.</li>
+</ul>
+<h2 id="adding-data-processing-technologies">Adding Data-Processing Technologies</h2>
+<div class="admonition note">
+<p>This documentation will use Google Analytics as an example. However, the following process needs to be repeated separately for each technology.</p>
+<ul>
+<li>Replace "Google Analytics" in the naming of tags, triggers and variables with the name of the technology you are currently implementing, e.g Matomo.</li>
+<li>If you already have a Google Analytics tag in your Google Tag Manager configuration, you can jump to the <a href="google-tag-manager-configuration?id=create-a-new-google-analytics-variable">Create a new Google Analytics variable</a> section.</li>
+</ul>
+</div>
+<h3 id="google-consent-mode">Google Consent Mode</h3>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The <strong>Google Consent Mode</strong> is activated by default in the Admin Interface. To deactivate the Google Consent Mode, go to the Admin Interface under Configuration / CMP Settings [CMP V2]. As the implementation differs for the Google Tags supported by the Google Consent Mode, please see our <a href="consent-mode.md">technical documentation</a> for more information on the Google Consent Mode and the correct templates to use with your CMP. </p>
+</div>
+<h3 id="create-a-new-google-analytics-tag">Create a new Google Analytics tag</h3>
+<ul>
+<li>Navigate to "Tags" in the side-menu and then click on "New".</li>
+<li>Add a new tag of type "Google Analytics: Universal Analytics".</li>
+<li>Name it "Google Analytics Tag".</li>
+<li>Select your Google Analytics settings under "Google Analytics Settings". Read <a href="https://usercentrics.atlassian.net/wiki/spaces/SKB/pages/176947291/How+do+I+connect+my+Google+Analytics+settings+with+the+Google+Analytics+tag+in+the+Google+Tag+Manager">this</a> to learn how set up your Google Analytics settings.</li>
+<li>Navigate to "Tag firing options" under "Advanced Settings" and select "Once per page".<ul>
+<li><b>Explanation</b>: If you want a certain technology to fire more than once per page view, you should set the tag firing option to "Unlimited". "Once per page", however, is Usercentrics' recommended setup.</li>
+</ul>
+</li>
+<li>Save "Google Analytics Tag".</li>
+</ul>
+<p><img alt="cmp_tag" src="/assets/gtm/ga_tag.png" /></p>
+<h3 id="create-a-new-google-analytics-variable">Create a new Google Analytics variable</h3>
+<p>You have to create consent default status variables for each of your non-IAB vendor script tags so that they are not triggered without consent.</p>
+<ul>
+<li>Navigate to "Variables" in the side-menu and then click on "New".</li>
+<li>Add a new variable of type "Data Layer Variable".</li>
+<li>In the top left, name the variable "Google Analytics Variable".</li>
+<li>Under "Data Layer Variable Name", insert "Google Analytics".
+    &gt; ⚠️ <b>Note:</b> Correct spelling, hyphenation and capitalization are mandatory for this field. Every technology must be added the way it is spelled in the Usercentrics Admin Interface. Here: "Google Analytics".</li>
+<li>Tick "Set Default Value" and set the default value to <i>false</i>.</li>
+<li>Save "Google Analytics Variable".</li>
+</ul>
+<p><img alt="cmp_tag" src="/assets/gtm/ga_variable.png" /></p>
+<h3 id="create-a-google-analytics-trigger">Create a Google Analytics trigger</h3>
+<div class="admonition note">
+<p>There are several ways to implement this logic. Usercentrics recommends the following option, however, depending on your setup, other structures might be more reasonable.</p>
+</div>
+<ul>
+<li>Navigate to "Triggers" in the side-menu and click on "New".</li>
+<li>Add a new trigger of type "Custom Event".</li>
+<li>In the top left, name the trigger "Google Analytics Trigger".</li>
+<li>Tick "Use regex matching" next to the "Event Name" input field</li>
+<li>Under "Event Name", insert "(consent_status.*)".</li>
+</ul>
+<div class="admonition note">
+<p>Correct spelling, hyphenation and capitalization are mandatory for this field.</p>
+</div>
+<ul>
+<li>Tick "Some Custom Events".</li>
+<li>In the drop-down menus, set the following condition: "Google Analytics Variable" contains <i>true</i>.<ul>
+<li><b>Explanation</b>: The variable contains the user's consent information (variable=<i>true</i> - user opted in || variable=<i>false</i> - user opted out) for a specific technology. Hence, the trigger should only be fired (and tag therefore activated), if the variable=<i>true</i>.</li>
+</ul>
+</li>
+<li>Save "Google Analytics Trigger".</li>
+</ul>
+<p><img alt="cmp_tag" src="/assets/gtm/browser_sdk_trigger_regex.png" /></p>
+<ul>
+<li>Add the trigger to "Google Analytics Tag".</li>
+</ul>
+<p><img alt="cmp_tag" src="/assets/gtm/ga_tag_w_trigger.png" /></p>
+<div class="admonition note">
+<p>Repeat this for each non-IAB vendor script in your Tag Manager.</p>
+</div>
+<h2 id="testing-in-preview-mode">Testing in Preview Mode</h2>
+<p>In order to make sure your Google Tag Manager setup works, you need to test it in preview mode.</p>
+<ul>
+<li>Activate preview mode by clicking on "Preview" in the top-right corner.</li>
+<li>Visit your website.</li>
+<li>Open the development tools of your browser and navigate to the "Network" tap.</li>
+<li>Network requests of the implemented data-processing technologies should not be visible, unless they were defined as "Essential" in your Admin Interface.</li>
+<li>Press "Accept All" on the Usercentrics CMP.</li>
+<li>Now network requests of the implemented data-processing technologies should be visible in the "Network" tap.</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      © Copyright 2022 Usercentrics GmbH
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "navigation.sections", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1514a9a0.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

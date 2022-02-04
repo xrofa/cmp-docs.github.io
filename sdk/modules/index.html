@@ -1,0 +1,7749 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/general/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
+    
+    
+      
+        <title>Technical SDK - Usercentrics CMP Browser</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script id="usercentrics-cmp" data-settings-id="iuVJ-_y0f" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" async ></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usercentricscmp-browser-sdk-v2134" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Usercentrics CMP Browser" class="md-header__button md-logo" aria-label="Usercentrics CMP Browser" data-md-component="logo">
+      
+  <img src="../../assets/general/usercentrics-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Usercentrics CMP Browser
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Technical SDK
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../pages/ui/" class="md-tabs__link">
+        Browser UI
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../pages/sdk/implementation-optional-steps/" class="md-tabs__link md-tabs__link--active">
+        Browser SDK
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../pages/gcm/consent-mode/" class="md-tabs__link">
+      Google Consent Mode
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../pages/gtm/configuration/" class="md-tabs__link">
+        Google Tag Manager
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../pages/features/tcf2/" class="md-tabs__link">
+        Features
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Usercentrics CMP Browser" class="md-nav__button md-logo" aria-label="Usercentrics CMP Browser" data-md-component="logo">
+      
+  <img src="../../assets/general/usercentrics-logo.svg" alt="logo">
+
+    </a>
+    Usercentrics CMP Browser
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">Getting Started</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/getting-started/ui/" class="md-nav__link">
+        Browser UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/getting-started/sdk/" class="md-nav__link">
+        Browser SDK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/getting-started/browser-support/" class="md-nav__link">
+        Browser Support
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../pages/ui/">Browser UI</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Browser UI" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Browser UI
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/ui/implementation-optional-steps/" class="md-nav__link">
+        Implementation (Optional Steps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/ui/adjusting-implemented-scripts/" class="md-nav__link">
+        Adjusting Implemented Scripts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../pages/guides/">Guides</a>
+          
+            <label for="__nav_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/guides/guide-example/" class="md-nav__link">
+        First Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/guides/guide-example/" class="md-nav__link">
+        Second Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/features/custom-css/" class="md-nav__link">
+        Custom CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          Browser UI API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser UI API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Browser UI API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/api/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/api/control-the-ui/" class="md-nav__link">
+        Control the UI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/api/custom-functionality/" class="md-nav__link">
+        Custom Functionality
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Browser SDK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Browser SDK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Browser SDK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/sdk/implementation-optional-steps/" class="md-nav__link">
+        Implementation (Optional Steps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Technical SDK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Technical SDK
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerations_1" class="md-nav__link">
+    Enumerations
+  </a>
+  
+    <nav class="md-nav" aria-label="Enumerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api_commands" class="md-nav__link">
+    API_COMMANDS
+  </a>
+  
+    <nav class="md-nav" aria-label="API_COMMANDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button_alignment" class="md-nav__link">
+    BUTTON_ALIGNMENT
+  </a>
+  
+    <nav class="md-nav" aria-label="BUTTON_ALIGNMENT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close_option" class="md-nav__link">
+    CLOSE_OPTION
+  </a>
+  
+    <nav class="md-nav" aria-label="CLOSE_OPTION">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent_action" class="md-nav__link">
+    CONSENT_ACTION
+  </a>
+  
+    <nav class="md-nav" aria-label="CONSENT_ACTION">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent_type" class="md-nav__link">
+    CONSENT_TYPE
+  </a>
+  
+    <nav class="md-nav" aria-label="CONSENT_TYPE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first_layer_variant" class="md-nav__link">
+    FIRST_LAYER_VARIANT
+  </a>
+  
+    <nav class="md-nav" aria-label="FIRST_LAYER_VARIANT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restrictiontype" class="md-nav__link">
+    RestrictionType
+  </a>
+  
+    <nav class="md-nav" aria-label="RestrictionType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second_layer_side" class="md-nav__link">
+    SECOND_LAYER_SIDE
+  </a>
+  
+    <nav class="md-nav" aria-label="SECOND_LAYER_SIDE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second_layer_trigger" class="md-nav__link">
+    SECOND_LAYER_TRIGGER
+  </a>
+  
+    <nav class="md-nav" aria-label="SECOND_LAYER_TRIGGER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second_layer_variant" class="md-nav__link">
+    SECOND_LAYER_VARIANT
+  </a>
+  
+    <nav class="md-nav" aria-label="SECOND_LAYER_VARIANT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcf_decision_ui_layer" class="md-nav__link">
+    TCF_DECISION_UI_LAYER
+  </a>
+  
+    <nav class="md-nav" aria-label="TCF_DECISION_UI_LAYER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    THEME
+  </a>
+  
+    <nav class="md-nav" aria-label="THEME">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking_event_type" class="md-nav__link">
+    TRACKING_EVENT_TYPE
+  </a>
+  
+    <nav class="md-nav" aria-label="TRACKING_EVENT_TYPE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui_layer" class="md-nav__link">
+    UI_LAYER
+  </a>
+  
+    <nav class="md-nav" aria-label="UI_LAYER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui_variant" class="md-nav__link">
+    UI_VARIANT
+  </a>
+  
+    <nav class="md-nav" aria-label="UI_VARIANT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes_1" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    Core
+  </a>
+  
+    <nav class="md-nav" aria-label="Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    default
+  </a>
+  
+    <nav class="md-nav" aria-label="default">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces_1" class="md-nav__link">
+    Interfaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregatedservices" class="md-nav__link">
+    AggregatedServices
+  </a>
+  
+    <nav class="md-nav" aria-label="AggregatedServices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basecategory" class="md-nav__link">
+    BaseCategory
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseCategory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basepurpose" class="md-nav__link">
+    BasePurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="BasePurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseuisettings" class="md-nav__link">
+    BaseUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttoncolor" class="md-nav__link">
+    ButtonColor
+  </a>
+  
+    <nav class="md-nav" aria-label="ButtonColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttonscustomization" class="md-nav__link">
+    ButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="ButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category" class="md-nav__link">
+    Category
+  </a>
+  
+    <nav class="md-nav" aria-label="Category">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpabuttons" class="md-nav__link">
+    CcpaButtons
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaButtons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpabuttonsconfig" class="md-nav__link">
+    CcpaButtonsConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaButtonsConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpafirstlayer" class="md-nav__link">
+    CcpaFirstLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaFirstLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpafirstlayerconfig" class="md-nav__link">
+    CcpaFirstLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaFirstLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpasecondlayer" class="md-nav__link">
+    CcpaSecondLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaSecondLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpasecondlayerconfig" class="md-nav__link">
+    CcpaSecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaSecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpaui" class="md-nav__link">
+    CcpaUI
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpauisettings" class="md-nav__link">
+    CcpaUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorcustomization" class="md-nav__link">
+    ColorCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="ColorCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commonbuttonscustomization" class="md-nav__link">
+    CommonButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="CommonButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commonui" class="md-nav__link">
+    CommonUI
+  </a>
+  
+    <nav class="md-nav" aria-label="CommonUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent" class="md-nav__link">
+    Consent
+  </a>
+  
+    <nav class="md-nav" aria-label="Consent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consenthistory" class="md-nav__link">
+    ConsentHistory
+  </a>
+  
+    <nav class="md-nav" aria-label="ConsentHistory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookieinformationlabels" class="md-nav__link">
+    CookieInformationLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="CookieInformationLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    Customization
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datadistribution" class="md-nav__link">
+    DataDistribution
+  </a>
+  
+    <nav class="md-nav" aria-label="DataDistribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataexchangesetting" class="md-nav__link">
+    DataExchangeSetting
+  </a>
+  
+    <nav class="md-nav" aria-label="DataExchangeSetting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultbuttonscustomization" class="md-nav__link">
+    DefaultButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultcnil" class="md-nav__link">
+    DefaultCnil
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultCnil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultfirstlayerconfig" class="md-nav__link">
+    DefaultFirstLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultFirstLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultgenerallabels" class="md-nav__link">
+    DefaultGeneralLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultGeneralLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultlabels" class="md-nav__link">
+    DefaultLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultsecondlayerconfig" class="md-nav__link">
+    DefaultSecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultSecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaulttcfgenerallabels" class="md-nav__link">
+    DefaultTCFGeneralLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultTCFGeneralLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultui" class="md-nav__link">
+    DefaultUI
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuibuttons" class="md-nav__link">
+    DefaultUIButtons
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUIButtons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuifirstlayer" class="md-nav__link">
+    DefaultUIFirstLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUIFirstLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuilabels" class="md-nav__link">
+    DefaultUILabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUILabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuisecondlayer" class="md-nav__link">
+    DefaultUISecondLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUISecondLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuisettings" class="md-nav__link">
+    DefaultUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devicestorage" class="md-nav__link">
+    DeviceStorage
+  </a>
+  
+    <nav class="md-nav" aria-label="DeviceStorage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disclosure" class="md-nav__link">
+    Disclosure
+  </a>
+  
+    <nav class="md-nav" aria-label="Disclosure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extendedservice" class="md-nav__link">
+    ExtendedService
+  </a>
+  
+    <nav class="md-nav" aria-label="ExtendedService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontcustomization" class="md-nav__link">
+    FontCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="FontCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idandname" class="md-nav__link">
+    IdAndName
+  </a>
+  
+    <nav class="md-nav" aria-label="IdAndName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initoptions" class="md-nav__link">
+    InitOptions
+  </a>
+  
+    <nav class="md-nav" aria-label="InitOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialuivalues" class="md-nav__link">
+    InitialUIValues
+  </a>
+  
+    <nav class="md-nav" aria-label="InitialUIValues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language" class="md-nav__link">
+    Language
+  </a>
+  
+    <nav class="md-nav" aria-label="Language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#languageconfig" class="md-nav__link">
+    LanguageConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="LanguageConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layercustomization" class="md-nav__link">
+    LayerCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="LayerCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkcustomization" class="md-nav__link">
+    LinkCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="LinkCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logocustomization" class="md-nav__link">
+    LogoCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="LogoCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlaycustomization" class="md-nav__link">
+    OverlayCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="OverlayCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poweredby" class="md-nav__link">
+    PoweredBy
+  </a>
+  
+    <nav class="md-nav" aria-label="PoweredBy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacybutton" class="md-nav__link">
+    PrivacyButton
+  </a>
+  
+    <nav class="md-nav" aria-label="PrivacyButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacybuttonui" class="md-nav__link">
+    PrivacyButtonUI
+  </a>
+  
+    <nav class="md-nav" aria-label="PrivacyButtonUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processingcompany" class="md-nav__link">
+    ProcessingCompany
+  </a>
+  
+    <nav class="md-nav" aria-label="ProcessingCompany">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resurfaceoptions" class="md-nav__link">
+    ResurfaceOptions
+  </a>
+  
+    <nav class="md-nav" aria-label="ResurfaceOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savebuttoncustomization" class="md-nav__link">
+    SaveButtonCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="SaveButtonCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondlayerconfig" class="md-nav__link">
+    SecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="SecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    Service
+  </a>
+  
+    <nav class="md-nav" aria-label="Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicehasharrayobject" class="md-nav__link">
+    ServiceHashArrayObject
+  </a>
+  
+    <nav class="md-nav" aria-label="ServiceHashArrayObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showsecondlayerbutton" class="md-nav__link">
+    ShowSecondLayerButton
+  </a>
+  
+    <nav class="md-nav" aria-label="ShowSecondLayerButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfbuttonsconfig" class="md-nav__link">
+    TCFButtonsConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFButtonsConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfchangedpurposes" class="md-nav__link">
+    TCFChangedPurposes
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFChangedPurposes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfdata" class="md-nav__link">
+    TCFData
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcffirstlayerconfig" class="md-nav__link">
+    TCFFirstLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFFirstLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcflabels" class="md-nav__link">
+    TCFLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfoptions" class="md-nav__link">
+    TCFOptions
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfpurpose" class="md-nav__link">
+    TCFPurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFPurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfsecondlayerconfig" class="md-nav__link">
+    TCFSecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFSecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfspecialfeature" class="md-nav__link">
+    TCFSpecialFeature
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFSpecialFeature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfstack" class="md-nav__link">
+    TCFStack
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFStack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuisettings" class="md-nav__link">
+    TCFUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisiononpurpose" class="md-nav__link">
+    TCFUserDecisionOnPurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisionOnPurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisiononvendor" class="md-nav__link">
+    TCFUserDecisionOnVendor
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisionOnVendor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_90" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisions" class="md-nav__link">
+    TCFUserDecisions
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_91" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfvendor" class="md-nav__link">
+    TCFVendor
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFVendor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_92" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfvendorrestriction" class="md-nav__link">
+    TCFVendorRestriction
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFVendorRestriction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_93" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfui" class="md-nav__link">
+    TcfUI
+  </a>
+  
+    <nav class="md-nav" aria-label="TcfUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_94" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuisettingslabels" class="md-nav__link">
+    TcfUISettingsLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="TcfUISettingsLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_95" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#togglecustomization" class="md-nav__link">
+    ToggleCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="ToggleCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_96" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trackeventparameters" class="md-nav__link">
+    TrackEventParameters
+  </a>
+  
+    <nav class="md-nav" aria-label="TrackEventParameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_97" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#urls" class="md-nav__link">
+    URLs
+  </a>
+  
+    <nav class="md-nav" aria-label="URLs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_98" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usercountrydata" class="md-nav__link">
+    UserCountryData
+  </a>
+  
+    <nav class="md-nav" aria-label="UserCountryData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_99" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdecision" class="md-nav__link">
+    UserDecision
+  </a>
+  
+    <nav class="md-nav" aria-label="UserDecision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_100" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usersessiondata" class="md-nav__link">
+    UserSessionData
+  </a>
+  
+    <nav class="md-nav" aria-label="UserSessionData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_101" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arialabelstranslation" class="md-nav__link">
+    AriaLabelsTranslation
+  </a>
+  
+    <nav class="md-nav" aria-label="AriaLabelsTranslation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_102" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseservice" class="md-nav__link">
+    BaseService
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_103" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpabuttoncustomization" class="md-nav__link">
+    CcpaButtonCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaButtonCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_104" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cornerposition" class="md-nav__link">
+    CornerPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="CornerPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_105" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_106" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultbuttonsconfig" class="md-nav__link">
+    DefaultButtonsConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultButtonsConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_107" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    Labels
+  </a>
+  
+    <nav class="md-nav" aria-label="Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_108" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logoposition" class="md-nav__link">
+    LogoPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="LogoPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_109" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maybe" class="md-nav__link">
+    Maybe
+  </a>
+  
+    <nav class="md-nav" aria-label="Maybe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_110" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maybebutton" class="md-nav__link">
+    MaybeButton
+  </a>
+  
+    <nav class="md-nav" aria-label="MaybeButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_111" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondlayerurl" class="md-nav__link">
+    SecondLayerUrl
+  </a>
+  
+    <nav class="md-nav" aria-label="SecondLayerUrl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_112" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcffeature" class="md-nav__link">
+    TCFFeature
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFFeature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_113" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfspecialpurpose" class="md-nav__link">
+    TCFSpecialPurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFSpecialPurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_114" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisiononspecialfeature" class="md-nav__link">
+    TCFUserDecisionOnSpecialFeature
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisionOnSpecialFeature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_115" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfvendorrestrictiontype" class="md-nav__link">
+    TCFVendorRestrictionType
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFVendorRestrictionType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_116" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfbuttonscustomization" class="md-nav__link">
+    TcfButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="TcfButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_117" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    UI
+  </a>
+  
+    <nav class="md-nav" aria-label="UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_118" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uisettings" class="md-nav__link">
+    UISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="UISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_119" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isccpadata" class="md-nav__link">
+    isCcpaData
+  </a>
+  
+    <nav class="md-nav" aria-label="isCcpaData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_120" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isccpalabels" class="md-nav__link">
+    isCcpaLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="isCcpaLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_121" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isccpaui" class="md-nav__link">
+    isCcpaUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isCcpaUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_122" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultdata" class="md-nav__link">
+    isDefaultData
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_123" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultlabels" class="md-nav__link">
+    isDefaultLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_124" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultui" class="md-nav__link">
+    isDefaultUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_125" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isprivacybuttonui" class="md-nav__link">
+    isPrivacyButtonUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isPrivacyButtonUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_126" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istcfdata" class="md-nav__link">
+    isTcfData
+  </a>
+  
+    <nav class="md-nav" aria-label="isTcfData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_127" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istcflabels" class="md-nav__link">
+    isTcfLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="isTcfLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_128" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istcfui" class="md-nav__link">
+    isTcfUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isTcfUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_129" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/gcm/consent-mode/" class="md-nav__link">
+        Google Consent Mode
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Google Tag Manager
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Google Tag Manager" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Google Tag Manager
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/gtm/configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/gtm/templates/" class="md-nav__link">
+        Templates
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/features/tcf2/" class="md-nav__link">
+        TCF 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/features/events/" class="md-nav__link">
+        Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/features/embeddings/" class="md-nav__link">
+        Embeddings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/features/smart-data-protector/" class="md-nav__link">
+        Smart Data Protector
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+    <nav class="md-nav" aria-label="Table of contents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerations_1" class="md-nav__link">
+    Enumerations
+  </a>
+  
+    <nav class="md-nav" aria-label="Enumerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api_commands" class="md-nav__link">
+    API_COMMANDS
+  </a>
+  
+    <nav class="md-nav" aria-label="API_COMMANDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button_alignment" class="md-nav__link">
+    BUTTON_ALIGNMENT
+  </a>
+  
+    <nav class="md-nav" aria-label="BUTTON_ALIGNMENT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_1" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close_option" class="md-nav__link">
+    CLOSE_OPTION
+  </a>
+  
+    <nav class="md-nav" aria-label="CLOSE_OPTION">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_2" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent_action" class="md-nav__link">
+    CONSENT_ACTION
+  </a>
+  
+    <nav class="md-nav" aria-label="CONSENT_ACTION">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_3" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent_type" class="md-nav__link">
+    CONSENT_TYPE
+  </a>
+  
+    <nav class="md-nav" aria-label="CONSENT_TYPE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_4" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first_layer_variant" class="md-nav__link">
+    FIRST_LAYER_VARIANT
+  </a>
+  
+    <nav class="md-nav" aria-label="FIRST_LAYER_VARIANT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_5" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restrictiontype" class="md-nav__link">
+    RestrictionType
+  </a>
+  
+    <nav class="md-nav" aria-label="RestrictionType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_6" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second_layer_side" class="md-nav__link">
+    SECOND_LAYER_SIDE
+  </a>
+  
+    <nav class="md-nav" aria-label="SECOND_LAYER_SIDE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_7" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second_layer_trigger" class="md-nav__link">
+    SECOND_LAYER_TRIGGER
+  </a>
+  
+    <nav class="md-nav" aria-label="SECOND_LAYER_TRIGGER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_8" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second_layer_variant" class="md-nav__link">
+    SECOND_LAYER_VARIANT
+  </a>
+  
+    <nav class="md-nav" aria-label="SECOND_LAYER_VARIANT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_9" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcf_decision_ui_layer" class="md-nav__link">
+    TCF_DECISION_UI_LAYER
+  </a>
+  
+    <nav class="md-nav" aria-label="TCF_DECISION_UI_LAYER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_10" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    THEME
+  </a>
+  
+    <nav class="md-nav" aria-label="THEME">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_11" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking_event_type" class="md-nav__link">
+    TRACKING_EVENT_TYPE
+  </a>
+  
+    <nav class="md-nav" aria-label="TRACKING_EVENT_TYPE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_12" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui_layer" class="md-nav__link">
+    UI_LAYER
+  </a>
+  
+    <nav class="md-nav" aria-label="UI_LAYER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_13" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui_variant" class="md-nav__link">
+    UI_VARIANT
+  </a>
+  
+    <nav class="md-nav" aria-label="UI_VARIANT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_14" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes_1" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    Core
+  </a>
+  
+    <nav class="md-nav" aria-label="Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_15" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    default
+  </a>
+  
+    <nav class="md-nav" aria-label="default">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_16" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces_1" class="md-nav__link">
+    Interfaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregatedservices" class="md-nav__link">
+    AggregatedServices
+  </a>
+  
+    <nav class="md-nav" aria-label="AggregatedServices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_17" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basecategory" class="md-nav__link">
+    BaseCategory
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseCategory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_18" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basepurpose" class="md-nav__link">
+    BasePurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="BasePurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_19" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseuisettings" class="md-nav__link">
+    BaseUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_20" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttoncolor" class="md-nav__link">
+    ButtonColor
+  </a>
+  
+    <nav class="md-nav" aria-label="ButtonColor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_21" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttonscustomization" class="md-nav__link">
+    ButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="ButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_22" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category" class="md-nav__link">
+    Category
+  </a>
+  
+    <nav class="md-nav" aria-label="Category">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_23" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpabuttons" class="md-nav__link">
+    CcpaButtons
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaButtons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_24" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpabuttonsconfig" class="md-nav__link">
+    CcpaButtonsConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaButtonsConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_25" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpafirstlayer" class="md-nav__link">
+    CcpaFirstLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaFirstLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_26" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpafirstlayerconfig" class="md-nav__link">
+    CcpaFirstLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaFirstLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_27" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpasecondlayer" class="md-nav__link">
+    CcpaSecondLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaSecondLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_28" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpasecondlayerconfig" class="md-nav__link">
+    CcpaSecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaSecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_29" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpaui" class="md-nav__link">
+    CcpaUI
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_30" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpauisettings" class="md-nav__link">
+    CcpaUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_31" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorcustomization" class="md-nav__link">
+    ColorCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="ColorCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_32" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commonbuttonscustomization" class="md-nav__link">
+    CommonButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="CommonButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_33" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commonui" class="md-nav__link">
+    CommonUI
+  </a>
+  
+    <nav class="md-nav" aria-label="CommonUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_34" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent" class="md-nav__link">
+    Consent
+  </a>
+  
+    <nav class="md-nav" aria-label="Consent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_35" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consenthistory" class="md-nav__link">
+    ConsentHistory
+  </a>
+  
+    <nav class="md-nav" aria-label="ConsentHistory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_36" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookieinformationlabels" class="md-nav__link">
+    CookieInformationLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="CookieInformationLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_37" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    Customization
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_38" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datadistribution" class="md-nav__link">
+    DataDistribution
+  </a>
+  
+    <nav class="md-nav" aria-label="DataDistribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_39" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataexchangesetting" class="md-nav__link">
+    DataExchangeSetting
+  </a>
+  
+    <nav class="md-nav" aria-label="DataExchangeSetting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_40" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultbuttonscustomization" class="md-nav__link">
+    DefaultButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_41" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultcnil" class="md-nav__link">
+    DefaultCnil
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultCnil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_42" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultfirstlayerconfig" class="md-nav__link">
+    DefaultFirstLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultFirstLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_43" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultgenerallabels" class="md-nav__link">
+    DefaultGeneralLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultGeneralLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_44" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultlabels" class="md-nav__link">
+    DefaultLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_45" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultsecondlayerconfig" class="md-nav__link">
+    DefaultSecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultSecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_46" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaulttcfgenerallabels" class="md-nav__link">
+    DefaultTCFGeneralLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultTCFGeneralLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_47" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultui" class="md-nav__link">
+    DefaultUI
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_48" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuibuttons" class="md-nav__link">
+    DefaultUIButtons
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUIButtons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_49" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuifirstlayer" class="md-nav__link">
+    DefaultUIFirstLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUIFirstLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_50" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuilabels" class="md-nav__link">
+    DefaultUILabels
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUILabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_51" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuisecondlayer" class="md-nav__link">
+    DefaultUISecondLayer
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUISecondLayer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_52" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultuisettings" class="md-nav__link">
+    DefaultUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_53" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devicestorage" class="md-nav__link">
+    DeviceStorage
+  </a>
+  
+    <nav class="md-nav" aria-label="DeviceStorage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_54" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disclosure" class="md-nav__link">
+    Disclosure
+  </a>
+  
+    <nav class="md-nav" aria-label="Disclosure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_55" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extendedservice" class="md-nav__link">
+    ExtendedService
+  </a>
+  
+    <nav class="md-nav" aria-label="ExtendedService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_56" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fontcustomization" class="md-nav__link">
+    FontCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="FontCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_57" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idandname" class="md-nav__link">
+    IdAndName
+  </a>
+  
+    <nav class="md-nav" aria-label="IdAndName">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_58" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initoptions" class="md-nav__link">
+    InitOptions
+  </a>
+  
+    <nav class="md-nav" aria-label="InitOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_59" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialuivalues" class="md-nav__link">
+    InitialUIValues
+  </a>
+  
+    <nav class="md-nav" aria-label="InitialUIValues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_60" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language" class="md-nav__link">
+    Language
+  </a>
+  
+    <nav class="md-nav" aria-label="Language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_61" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#languageconfig" class="md-nav__link">
+    LanguageConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="LanguageConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_62" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layercustomization" class="md-nav__link">
+    LayerCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="LayerCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_63" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkcustomization" class="md-nav__link">
+    LinkCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="LinkCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_64" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logocustomization" class="md-nav__link">
+    LogoCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="LogoCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_65" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlaycustomization" class="md-nav__link">
+    OverlayCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="OverlayCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_66" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poweredby" class="md-nav__link">
+    PoweredBy
+  </a>
+  
+    <nav class="md-nav" aria-label="PoweredBy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_67" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacybutton" class="md-nav__link">
+    PrivacyButton
+  </a>
+  
+    <nav class="md-nav" aria-label="PrivacyButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_68" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacybuttonui" class="md-nav__link">
+    PrivacyButtonUI
+  </a>
+  
+    <nav class="md-nav" aria-label="PrivacyButtonUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_69" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processingcompany" class="md-nav__link">
+    ProcessingCompany
+  </a>
+  
+    <nav class="md-nav" aria-label="ProcessingCompany">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_70" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resurfaceoptions" class="md-nav__link">
+    ResurfaceOptions
+  </a>
+  
+    <nav class="md-nav" aria-label="ResurfaceOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_71" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savebuttoncustomization" class="md-nav__link">
+    SaveButtonCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="SaveButtonCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_72" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondlayerconfig" class="md-nav__link">
+    SecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="SecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_73" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    Service
+  </a>
+  
+    <nav class="md-nav" aria-label="Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_74" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicehasharrayobject" class="md-nav__link">
+    ServiceHashArrayObject
+  </a>
+  
+    <nav class="md-nav" aria-label="ServiceHashArrayObject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_75" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_76" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showsecondlayerbutton" class="md-nav__link">
+    ShowSecondLayerButton
+  </a>
+  
+    <nav class="md-nav" aria-label="ShowSecondLayerButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_77" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfbuttonsconfig" class="md-nav__link">
+    TCFButtonsConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFButtonsConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_78" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfchangedpurposes" class="md-nav__link">
+    TCFChangedPurposes
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFChangedPurposes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_79" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfdata" class="md-nav__link">
+    TCFData
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_80" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcffirstlayerconfig" class="md-nav__link">
+    TCFFirstLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFFirstLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_81" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcflabels" class="md-nav__link">
+    TCFLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_82" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfoptions" class="md-nav__link">
+    TCFOptions
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFOptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_83" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfpurpose" class="md-nav__link">
+    TCFPurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFPurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_84" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfsecondlayerconfig" class="md-nav__link">
+    TCFSecondLayerConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFSecondLayerConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_85" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfspecialfeature" class="md-nav__link">
+    TCFSpecialFeature
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFSpecialFeature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_86" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfstack" class="md-nav__link">
+    TCFStack
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFStack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_87" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuisettings" class="md-nav__link">
+    TCFUISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_88" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisiononpurpose" class="md-nav__link">
+    TCFUserDecisionOnPurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisionOnPurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_89" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisiononvendor" class="md-nav__link">
+    TCFUserDecisionOnVendor
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisionOnVendor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_90" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisions" class="md-nav__link">
+    TCFUserDecisions
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_91" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfvendor" class="md-nav__link">
+    TCFVendor
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFVendor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_92" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfvendorrestriction" class="md-nav__link">
+    TCFVendorRestriction
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFVendorRestriction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_93" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfui" class="md-nav__link">
+    TcfUI
+  </a>
+  
+    <nav class="md-nav" aria-label="TcfUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_94" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuisettingslabels" class="md-nav__link">
+    TcfUISettingsLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="TcfUISettingsLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_95" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#togglecustomization" class="md-nav__link">
+    ToggleCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="ToggleCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_96" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trackeventparameters" class="md-nav__link">
+    TrackEventParameters
+  </a>
+  
+    <nav class="md-nav" aria-label="TrackEventParameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_97" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#urls" class="md-nav__link">
+    URLs
+  </a>
+  
+    <nav class="md-nav" aria-label="URLs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_98" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usercountrydata" class="md-nav__link">
+    UserCountryData
+  </a>
+  
+    <nav class="md-nav" aria-label="UserCountryData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_99" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdecision" class="md-nav__link">
+    UserDecision
+  </a>
+  
+    <nav class="md-nav" aria-label="UserDecision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_100" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usersessiondata" class="md-nav__link">
+    UserSessionData
+  </a>
+  
+    <nav class="md-nav" aria-label="UserSessionData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_101" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arialabelstranslation" class="md-nav__link">
+    AriaLabelsTranslation
+  </a>
+  
+    <nav class="md-nav" aria-label="AriaLabelsTranslation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_102" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseservice" class="md-nav__link">
+    BaseService
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_103" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ccpabuttoncustomization" class="md-nav__link">
+    CcpaButtonCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="CcpaButtonCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_104" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cornerposition" class="md-nav__link">
+    CornerPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="CornerPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_105" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_106" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defaultbuttonsconfig" class="md-nav__link">
+    DefaultButtonsConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="DefaultButtonsConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_107" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    Labels
+  </a>
+  
+    <nav class="md-nav" aria-label="Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_108" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logoposition" class="md-nav__link">
+    LogoPosition
+  </a>
+  
+    <nav class="md-nav" aria-label="LogoPosition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_109" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maybe" class="md-nav__link">
+    Maybe
+  </a>
+  
+    <nav class="md-nav" aria-label="Maybe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-parameters" class="md-nav__link">
+    Type parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_110" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maybebutton" class="md-nav__link">
+    MaybeButton
+  </a>
+  
+    <nav class="md-nav" aria-label="MaybeButton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_111" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondlayerurl" class="md-nav__link">
+    SecondLayerUrl
+  </a>
+  
+    <nav class="md-nav" aria-label="SecondLayerUrl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_112" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcffeature" class="md-nav__link">
+    TCFFeature
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFFeature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_113" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfspecialpurpose" class="md-nav__link">
+    TCFSpecialPurpose
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFSpecialPurpose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_114" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfuserdecisiononspecialfeature" class="md-nav__link">
+    TCFUserDecisionOnSpecialFeature
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFUserDecisionOnSpecialFeature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_115" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfvendorrestrictiontype" class="md-nav__link">
+    TCFVendorRestrictionType
+  </a>
+  
+    <nav class="md-nav" aria-label="TCFVendorRestrictionType">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_116" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcfbuttonscustomization" class="md-nav__link">
+    TcfButtonsCustomization
+  </a>
+  
+    <nav class="md-nav" aria-label="TcfButtonsCustomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_117" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    UI
+  </a>
+  
+    <nav class="md-nav" aria-label="UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_118" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uisettings" class="md-nav__link">
+    UISettings
+  </a>
+  
+    <nav class="md-nav" aria-label="UISettings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_119" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isccpadata" class="md-nav__link">
+    isCcpaData
+  </a>
+  
+    <nav class="md-nav" aria-label="isCcpaData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_120" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isccpalabels" class="md-nav__link">
+    isCcpaLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="isCcpaLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_121" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isccpaui" class="md-nav__link">
+    isCcpaUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isCcpaUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_122" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultdata" class="md-nav__link">
+    isDefaultData
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_123" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultlabels" class="md-nav__link">
+    isDefaultLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_4" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_124" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdefaultui" class="md-nav__link">
+    isDefaultUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isDefaultUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_125" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isprivacybuttonui" class="md-nav__link">
+    isPrivacyButtonUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isPrivacyButtonUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_6" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_6" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_126" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istcfdata" class="md-nav__link">
+    isTcfData
+  </a>
+  
+    <nav class="md-nav" aria-label="isTcfData">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_7" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_7" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_127" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istcflabels" class="md-nav__link">
+    isTcfLabels
+  </a>
+  
+    <nav class="md-nav" aria-label="isTcfLabels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_8" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_128" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#istcfui" class="md-nav__link">
+    isTcfUI
+  </a>
+  
+    <nav class="md-nav" aria-label="isTcfUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_9" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defined-in_129" class="md-nav__link">
+    Defined in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<p><a href="../">@usercentrics/cmp-browser-sdk - v2.13.X</a> / Exports</p>
+<h1 id="usercentricscmp-browser-sdk-v2134">@usercentrics/cmp-browser-sdk - v2.13.4</h1>
+<h2 id="table-of-contents">Table of contents</h2>
+<h3 id="enumerations">Enumerations</h3>
+<ul>
+<li><a href="undefined">API_COMMANDS</a></li>
+<li><a href="undefined">BUTTON_ALIGNMENT</a></li>
+<li><a href="undefined">CLOSE_OPTION</a></li>
+<li><a href="undefined">CONSENT_ACTION</a></li>
+<li><a href="undefined">CONSENT_TYPE</a></li>
+<li><a href="undefined">FIRST_LAYER_VARIANT</a></li>
+<li><a href="undefined">RestrictionType</a></li>
+<li><a href="undefined">SECOND_LAYER_SIDE</a></li>
+<li><a href="undefined">SECOND_LAYER_TRIGGER</a></li>
+<li><a href="undefined">SECOND_LAYER_VARIANT</a></li>
+<li><a href="undefined">TCF_DECISION_UI_LAYER</a></li>
+<li><a href="undefined">THEME</a></li>
+<li><a href="undefined">TRACKING_EVENT_TYPE</a></li>
+<li><a href="undefined">UI_LAYER</a></li>
+<li><a href="undefined">UI_VARIANT</a></li>
+</ul>
+<h3 id="classes">Classes</h3>
+<ul>
+<li><a href="undefined">Core</a></li>
+<li><a href="undefined">default</a></li>
+</ul>
+<h3 id="interfaces">Interfaces</h3>
+<ul>
+<li><a href="undefined">AggregatedServices</a></li>
+<li><a href="undefined">BaseCategory</a></li>
+<li><a href="undefined">BasePurpose</a></li>
+<li><a href="undefined">BaseUISettings</a></li>
+<li><a href="undefined">ButtonColor</a></li>
+<li><a href="undefined">ButtonsCustomization</a></li>
+<li><a href="undefined">Category</a></li>
+<li><a href="undefined">CcpaButtons</a></li>
+<li><a href="undefined">CcpaButtonsConfig</a></li>
+<li><a href="undefined">CcpaFirstLayer</a></li>
+<li><a href="undefined">CcpaFirstLayerConfig</a></li>
+<li><a href="undefined">CcpaSecondLayer</a></li>
+<li><a href="undefined">CcpaSecondLayerConfig</a></li>
+<li><a href="undefined">CcpaUI</a></li>
+<li><a href="undefined">CcpaUISettings</a></li>
+<li><a href="undefined">ColorCustomization</a></li>
+<li><a href="undefined">CommonButtonsCustomization</a></li>
+<li><a href="undefined">CommonUI</a></li>
+<li><a href="undefined">Consent</a></li>
+<li><a href="undefined">ConsentHistory</a></li>
+<li><a href="undefined">CookieInformationLabels</a></li>
+<li><a href="undefined">Customization</a></li>
+<li><a href="undefined">DataDistribution</a></li>
+<li><a href="undefined">DataExchangeSetting</a></li>
+<li><a href="undefined">DefaultButtonsCustomization</a></li>
+<li><a href="undefined">DefaultCnil</a></li>
+<li><a href="undefined">DefaultFirstLayerConfig</a></li>
+<li><a href="undefined">DefaultGeneralLabels</a></li>
+<li><a href="undefined">DefaultLabels</a></li>
+<li><a href="undefined">DefaultSecondLayerConfig</a></li>
+<li><a href="undefined">DefaultTCFGeneralLabels</a></li>
+<li><a href="undefined">DefaultUI</a></li>
+<li><a href="undefined">DefaultUIButtons</a></li>
+<li><a href="undefined">DefaultUIFirstLayer</a></li>
+<li><a href="undefined">DefaultUILabels</a></li>
+<li><a href="undefined">DefaultUISecondLayer</a></li>
+<li><a href="undefined">DefaultUISettings</a></li>
+<li><a href="undefined">DeviceStorage</a></li>
+<li><a href="undefined">Disclosure</a></li>
+<li><a href="undefined">ExtendedService</a></li>
+<li><a href="undefined">FontCustomization</a></li>
+<li><a href="undefined">IdAndName</a></li>
+<li><a href="undefined">InitOptions</a></li>
+<li><a href="undefined">InitialUIValues</a></li>
+<li><a href="undefined">Language</a></li>
+<li><a href="undefined">LanguageConfig</a></li>
+<li><a href="undefined">LayerCustomization</a></li>
+<li><a href="undefined">LinkCustomization</a></li>
+<li><a href="undefined">LogoCustomization</a></li>
+<li><a href="undefined">OverlayCustomization</a></li>
+<li><a href="undefined">PoweredBy</a></li>
+<li><a href="undefined">PrivacyButton</a></li>
+<li><a href="undefined">PrivacyButtonUI</a></li>
+<li><a href="undefined">ProcessingCompany</a></li>
+<li><a href="undefined">ResurfaceOptions</a></li>
+<li><a href="undefined">SaveButtonCustomization</a></li>
+<li><a href="undefined">SecondLayerConfig</a></li>
+<li><a href="undefined">Service</a></li>
+<li><a href="undefined">ServiceHashArrayObject</a></li>
+<li><a href="undefined">Settings</a></li>
+<li><a href="undefined">ShowSecondLayerButton</a></li>
+<li><a href="undefined">TCFButtonsConfig</a></li>
+<li><a href="undefined">TCFChangedPurposes</a></li>
+<li><a href="undefined">TCFData</a></li>
+<li><a href="undefined">TCFFirstLayerConfig</a></li>
+<li><a href="undefined">TCFLabels</a></li>
+<li><a href="undefined">TCFOptions</a></li>
+<li><a href="undefined">TCFPurpose</a></li>
+<li><a href="undefined">TCFSecondLayerConfig</a></li>
+<li><a href="undefined">TCFSpecialFeature</a></li>
+<li><a href="undefined">TCFStack</a></li>
+<li><a href="undefined">TCFUISettings</a></li>
+<li><a href="undefined">TCFUserDecisionOnPurpose</a></li>
+<li><a href="undefined">TCFUserDecisionOnVendor</a></li>
+<li><a href="undefined">TCFUserDecisions</a></li>
+<li><a href="undefined">TCFVendor</a></li>
+<li><a href="undefined">TCFVendorRestriction</a></li>
+<li><a href="undefined">TcfUI</a></li>
+<li><a href="undefined">TcfUISettingsLabels</a></li>
+<li><a href="undefined">ToggleCustomization</a></li>
+<li><a href="undefined">TrackEventParameters</a></li>
+<li><a href="undefined">URLs</a></li>
+<li><a href="undefined">UserCountryData</a></li>
+<li><a href="undefined">UserDecision</a></li>
+<li><a href="undefined">UserSessionData</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases</h3>
+<ul>
+<li><a href="undefined">AriaLabelsTranslation</a></li>
+<li><a href="undefined">BaseService</a></li>
+<li><a href="undefined">CcpaButtonCustomization</a></li>
+<li><a href="undefined">CornerPosition</a></li>
+<li><a href="undefined">Data</a></li>
+<li><a href="undefined">DefaultButtonsConfig</a></li>
+<li><a href="undefined">Labels</a></li>
+<li><a href="undefined">LogoPosition</a></li>
+<li><a href="undefined">Maybe</a></li>
+<li><a href="undefined">MaybeButton</a></li>
+<li><a href="undefined">SecondLayerUrl</a></li>
+<li><a href="undefined">TCFFeature</a></li>
+<li><a href="undefined">TCFSpecialPurpose</a></li>
+<li><a href="undefined">TCFUserDecisionOnSpecialFeature</a></li>
+<li><a href="undefined">TCFVendorRestrictionType</a></li>
+<li><a href="undefined">TcfButtonsCustomization</a></li>
+<li><a href="undefined">UI</a></li>
+<li><a href="undefined">UISettings</a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><a href="undefined">isCcpaData</a></li>
+<li><a href="undefined">isCcpaLabels</a></li>
+<li><a href="undefined">isCcpaUI</a></li>
+<li><a href="undefined">isDefaultData</a></li>
+<li><a href="undefined">isDefaultLabels</a></li>
+<li><a href="undefined">isDefaultUI</a></li>
+<li><a href="undefined">isPrivacyButtonUI</a></li>
+<li><a href="undefined">isTcfData</a></li>
+<li><a href="undefined">isTcfLabels</a></li>
+<li><a href="undefined">isTcfUI</a></li>
+</ul>
+<h2 id="enumerations_1">Enumerations</h2>
+<h3 id="api_commands">API_COMMANDS</h3>
+<p>• <strong>API_COMMANDS</strong>: Enum API_COMMANDS</p>
+<h4 id="defined-in">Defined in</h4>
+<p>services/SettingsV2/enums/Ccpa/enums.public.ts:1</p>
+<hr />
+<h3 id="button_alignment">BUTTON_ALIGNMENT</h3>
+<p>• <strong>BUTTON_ALIGNMENT</strong>: Enum BUTTON_ALIGNMENT</p>
+<h4 id="defined-in_1">Defined in</h4>
+<p>services/SettingsV2/enums/enums.public.ts:27</p>
+<hr />
+<h3 id="close_option">CLOSE_OPTION</h3>
+<p>• <strong>CLOSE_OPTION</strong>: Enum CLOSE_OPTION</p>
+<h4 id="defined-in_2">Defined in</h4>
+<p>services/Api/enums/enums.legacy.ts:29</p>
+<hr />
+<h3 id="consent_action">CONSENT_ACTION</h3>
+<p>• <code>Const</code> <strong>CONSENT_ACTION</strong>: Enum CONSENT_ACTION</p>
+<p>Used internally inside the SDK to define the action of a Consent</p>
+<h4 id="defined-in_3">Defined in</h4>
+<p>services/DataFacade/enums/enums.public.ts:2</p>
+<hr />
+<h3 id="consent_type">CONSENT_TYPE</h3>
+<p>• <code>Const</code> <strong>CONSENT_TYPE</strong>: Enum CONSENT_TYPE</p>
+<h4 id="defined-in_4">Defined in</h4>
+<p>services/DataFacade/enums/enums.public.ts:14</p>
+<hr />
+<h3 id="first_layer_variant">FIRST_LAYER_VARIANT</h3>
+<p>• <code>Const</code> <strong>FIRST_LAYER_VARIANT</strong>: Enum FIRST_LAYER_VARIANT</p>
+<h4 id="defined-in_5">Defined in</h4>
+<p>services/SettingsV2/enums/enums.public.ts:1</p>
+<hr />
+<h3 id="restrictiontype">RestrictionType</h3>
+<p>• <strong>RestrictionType</strong>: Enum RestrictionType</p>
+<h4 id="defined-in_6">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:6</p>
+<hr />
+<h3 id="second_layer_side">SECOND_LAYER_SIDE</h3>
+<p>• <code>Const</code> <strong>SECOND_LAYER_SIDE</strong>: Enum SECOND_LAYER_SIDE</p>
+<h4 id="defined-in_7">Defined in</h4>
+<p>services/SettingsV2/enums/enums.public.ts:22</p>
+<hr />
+<h3 id="second_layer_trigger">SECOND_LAYER_TRIGGER</h3>
+<p>• <strong>SECOND_LAYER_TRIGGER</strong>: Enum SECOND_LAYER_TRIGGER</p>
+<h4 id="defined-in_8">Defined in</h4>
+<p>services/SettingsV2/enums/enums.public.ts:16</p>
+<hr />
+<h3 id="second_layer_variant">SECOND_LAYER_VARIANT</h3>
+<p>• <code>Const</code> <strong>SECOND_LAYER_VARIANT</strong>: Enum SECOND_LAYER_VARIANT</p>
+<h4 id="defined-in_9">Defined in</h4>
+<p>services/SettingsV2/enums/enums.public.ts:6</p>
+<hr />
+<h3 id="tcf_decision_ui_layer">TCF_DECISION_UI_LAYER</h3>
+<p>• <code>Const</code> <strong>TCF_DECISION_UI_LAYER</strong>: Enum TCF_DECISION_UI_LAYER</p>
+<p>The layer that the user's decision came from</p>
+<h4 id="defined-in_10">Defined in</h4>
+<p>services/SettingsV2/enums/TCF/enums.public.ts:2</p>
+<hr />
+<h3 id="theme">THEME</h3>
+<p>• <code>Const</code> <strong>THEME</strong>: Enum THEME</p>
+<h4 id="defined-in_11">Defined in</h4>
+<p>services/SettingsV2/enums/enums.public.ts:11</p>
+<hr />
+<h3 id="tracking_event_type">TRACKING_EVENT_TYPE</h3>
+<p>• <strong>TRACKING_EVENT_TYPE</strong>: Enum TRACKING_EVENT_TYPE</p>
+<h4 id="defined-in_12">Defined in</h4>
+<p>services/DataFacade/enums/enums.public.ts:19</p>
+<hr />
+<h3 id="ui_layer">UI_LAYER</h3>
+<p>• <code>Const</code> <strong>UI_LAYER</strong>: Enum UI_LAYER</p>
+<p>All the different UI layers</p>
+<h4 id="defined-in_13">Defined in</h4>
+<p>interfaces.ts:8</p>
+<hr />
+<h3 id="ui_variant">UI_VARIANT</h3>
+<p>• <code>Const</code> <strong>UI_VARIANT</strong>: Enum UI_VARIANT</p>
+<p>All the different UI variants</p>
+<h4 id="defined-in_14">Defined in</h4>
+<p>interfaces.ts:16</p>
+<h2 id="classes_1">Classes</h2>
+<h3 id="core">Core</h3>
+<p>• <strong>Core</strong>: Class Core</p>
+<h4 id="defined-in_15">Defined in</h4>
+<p>services/SettingsV2/Core/index.ts:8</p>
+<hr />
+<h3 id="default">default</h3>
+<p>• <strong>default</strong>: Class default</p>
+<h4 id="defined-in_16">Defined in</h4>
+<p>index.ts:122</p>
+<h2 id="interfaces_1">Interfaces</h2>
+<h3 id="aggregatedservices">AggregatedServices</h3>
+<p>• <strong>AggregatedServices</strong>: Interface AggregatedServices</p>
+<h4 id="defined-in_17">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:29</p>
+<hr />
+<h3 id="basecategory">BaseCategory</h3>
+<p>• <strong>BaseCategory</strong>: Interface BaseCategory</p>
+<h4 id="defined-in_18">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:37</p>
+<hr />
+<h3 id="basepurpose">BasePurpose</h3>
+<p>• <strong>BasePurpose</strong>: Interface BasePurpose</p>
+<h4 id="defined-in_19">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:193</p>
+<hr />
+<h3 id="baseuisettings">BaseUISettings</h3>
+<p>• <strong>BaseUISettings</strong>: Interface BaseUISettings</p>
+<h4 id="defined-in_20">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:31</p>
+<hr />
+<h3 id="buttoncolor">ButtonColor</h3>
+<p>• <strong>ButtonColor</strong>: Interface ButtonColor</p>
+<h4 id="defined-in_21">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:16</p>
+<hr />
+<h3 id="buttonscustomization">ButtonsCustomization</h3>
+<p>• <strong>ButtonsCustomization</strong>: Interface ButtonsCustomization</p>
+<h4 id="defined-in_22">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:40</p>
+<hr />
+<h3 id="category">Category</h3>
+<p>• <strong>Category</strong>: Interface Category</p>
+<h4 id="defined-in_23">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:40</p>
+<hr />
+<h3 id="ccpabuttons">CcpaButtons</h3>
+<p>• <strong>CcpaButtons</strong>: Interface CcpaButtons</p>
+<h4 id="defined-in_24">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:88</p>
+<hr />
+<h3 id="ccpabuttonsconfig">CcpaButtonsConfig</h3>
+<p>• <strong>CcpaButtonsConfig</strong>: Interface CcpaButtonsConfig</p>
+<h4 id="defined-in_25">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:94</p>
+<hr />
+<h3 id="ccpafirstlayer">CcpaFirstLayer</h3>
+<p>• <strong>CcpaFirstLayer</strong>: Interface CcpaFirstLayer</p>
+<h4 id="defined-in_26">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:95</p>
+<hr />
+<h3 id="ccpafirstlayerconfig">CcpaFirstLayerConfig</h3>
+<p>• <strong>CcpaFirstLayerConfig</strong>: Interface CcpaFirstLayerConfig</p>
+<h4 id="defined-in_27">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:120</p>
+<hr />
+<h3 id="ccpasecondlayer">CcpaSecondLayer</h3>
+<p>• <strong>CcpaSecondLayer</strong>: Interface CcpaSecondLayer</p>
+<h4 id="defined-in_28">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:105</p>
+<hr />
+<h3 id="ccpasecondlayerconfig">CcpaSecondLayerConfig</h3>
+<p>• <strong>CcpaSecondLayerConfig</strong>: Interface CcpaSecondLayerConfig</p>
+<h4 id="defined-in_29">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:150</p>
+<hr />
+<h3 id="ccpaui">CcpaUI</h3>
+<p>• <strong>CcpaUI</strong>: Interface CcpaUI</p>
+<h4 id="defined-in_30">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:186</p>
+<hr />
+<h3 id="ccpauisettings">CcpaUISettings</h3>
+<p>• <strong>CcpaUISettings</strong>: Interface CcpaUISettings</p>
+<h4 id="defined-in_31">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:42</p>
+<hr />
+<h3 id="colorcustomization">ColorCustomization</h3>
+<p>• <strong>ColorCustomization</strong>: Interface ColorCustomization</p>
+<h4 id="defined-in_32">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:22</p>
+<hr />
+<h3 id="commonbuttonscustomization">CommonButtonsCustomization</h3>
+<p>• <strong>CommonButtonsCustomization</strong>: Interface CommonButtonsCustomization</p>
+<h4 id="defined-in_33">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:29</p>
+<hr />
+<h3 id="commonui">CommonUI</h3>
+<p>• <strong>CommonUI</strong>: Interface CommonUI</p>
+<h4 id="defined-in_34">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:169</p>
+<hr />
+<h3 id="consent">Consent</h3>
+<p>• <strong>Consent</strong>: Interface Consent</p>
+<h4 id="defined-in_35">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:36</p>
+<hr />
+<h3 id="consenthistory">ConsentHistory</h3>
+<p>• <strong>ConsentHistory</strong>: Interface ConsentHistory</p>
+<h4 id="defined-in_36">Defined in</h4>
+<p>services/DataFacade/interfaces/interfaces.public.ts:6</p>
+<hr />
+<h3 id="cookieinformationlabels">CookieInformationLabels</h3>
+<p>• <strong>CookieInformationLabels</strong>: Interface CookieInformationLabels</p>
+<h4 id="defined-in_37">Defined in</h4>
+<p>services/SettingsV2/Labels/interfaces.ts:63</p>
+<hr />
+<h3 id="customization">Customization</h3>
+<p>• <strong>Customization</strong>: Interface Customization</p>
+<h4 id="defined-in_38">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:36</p>
+<hr />
+<h3 id="datadistribution">DataDistribution</h3>
+<p>• <strong>DataDistribution</strong>: Interface DataDistribution</p>
+<h4 id="defined-in_39">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:13</p>
+<hr />
+<h3 id="dataexchangesetting">DataExchangeSetting</h3>
+<p>• <strong>DataExchangeSetting</strong>: Interface DataExchangeSetting</p>
+<h4 id="defined-in_40">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:7</p>
+<hr />
+<h3 id="defaultbuttonscustomization">DefaultButtonsCustomization</h3>
+<p>• <strong>DefaultButtonsCustomization</strong>: Interface DefaultButtonsCustomization</p>
+<h4 id="defined-in_41">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:34</p>
+<hr />
+<h3 id="defaultcnil">DefaultCnil</h3>
+<p>• <strong>DefaultCnil</strong>: Interface DefaultCnil</p>
+<h4 id="defined-in_42">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:67</p>
+<hr />
+<h3 id="defaultfirstlayerconfig">DefaultFirstLayerConfig</h3>
+<p>• <strong>DefaultFirstLayerConfig</strong>: Interface DefaultFirstLayerConfig</p>
+<h4 id="defined-in_43">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:124</p>
+<hr />
+<h3 id="defaultgenerallabels">DefaultGeneralLabels</h3>
+<p>• <strong>DefaultGeneralLabels</strong>: Interface DefaultGeneralLabels</p>
+<h4 id="defined-in_44">Defined in</h4>
+<p>services/SettingsV2/Labels/interfaces.ts:36</p>
+<hr />
+<h3 id="defaultlabels">DefaultLabels</h3>
+<p>• <strong>DefaultLabels</strong>: Interface DefaultLabels</p>
+<h4 id="defined-in_45">Defined in</h4>
+<p>services/SettingsV2/Labels/interfaces.ts:255</p>
+<hr />
+<h3 id="defaultsecondlayerconfig">DefaultSecondLayerConfig</h3>
+<p>• <strong>DefaultSecondLayerConfig</strong>: Interface DefaultSecondLayerConfig</p>
+<h4 id="defined-in_46">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:154</p>
+<hr />
+<h3 id="defaulttcfgenerallabels">DefaultTCFGeneralLabels</h3>
+<p>• <strong>DefaultTCFGeneralLabels</strong>: Interface DefaultTCFGeneralLabels</p>
+<h4 id="defined-in_47">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:166</p>
+<hr />
+<h3 id="defaultui">DefaultUI</h3>
+<p>• <strong>DefaultUI</strong>: Interface DefaultUI</p>
+<h4 id="defined-in_48">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:192</p>
+<hr />
+<h3 id="defaultuibuttons">DefaultUIButtons</h3>
+<p>• <strong>DefaultUIButtons</strong>: Interface DefaultUIButtons</p>
+<h4 id="defined-in_49">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:153</p>
+<hr />
+<h3 id="defaultuifirstlayer">DefaultUIFirstLayer</h3>
+<p>• <strong>DefaultUIFirstLayer</strong>: Interface DefaultUIFirstLayer</p>
+<h4 id="defined-in_50">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:142</p>
+<hr />
+<h3 id="defaultuilabels">DefaultUILabels</h3>
+<p>• <strong>DefaultUILabels</strong>: Interface DefaultUILabels</p>
+<h4 id="defined-in_51">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:71</p>
+<hr />
+<h3 id="defaultuisecondlayer">DefaultUISecondLayer</h3>
+<p>• <strong>DefaultUISecondLayer</strong>: Interface DefaultUISecondLayer</p>
+<h4 id="defined-in_52">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:121</p>
+<hr />
+<h3 id="defaultuisettings">DefaultUISettings</h3>
+<p>• <strong>DefaultUISettings</strong>: Interface DefaultUISettings</p>
+<h4 id="defined-in_53">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:59</p>
+<hr />
+<h3 id="devicestorage">DeviceStorage</h3>
+<p>• <strong>DeviceStorage</strong>: Interface DeviceStorage</p>
+<h4 id="defined-in_54">Defined in</h4>
+<p>services/Api/interfaces/interfaces.legacy.ts:148</p>
+<hr />
+<h3 id="disclosure">Disclosure</h3>
+<p>• <strong>Disclosure</strong>: Interface Disclosure</p>
+<h4 id="defined-in_55">Defined in</h4>
+<p>services/Api/interfaces/interfaces.legacy.ts:137</p>
+<hr />
+<h3 id="extendedservice">ExtendedService</h3>
+<p>• <strong>ExtendedService</strong>: Interface ExtendedService</p>
+<h4 id="defined-in_56">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:67</p>
+<hr />
+<h3 id="fontcustomization">FontCustomization</h3>
+<p>• <strong>FontCustomization</strong>: Interface FontCustomization</p>
+<h4 id="defined-in_57">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:50</p>
+<hr />
+<h3 id="idandname">IdAndName</h3>
+<p>• <strong>IdAndName</strong>: Interface IdAndName</p>
+<p>A generic wrapper for a unique id and a name. Introduced to minimize redundancy.</p>
+<h4 id="defined-in_58">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:186</p>
+<hr />
+<h3 id="initoptions">InitOptions</h3>
+<p>• <strong>InitOptions</strong>: Interface InitOptions</p>
+<p>Additional options you can pass to the constructor</p>
+<h4 id="defined-in_59">Defined in</h4>
+<p>interfaces.ts:39</p>
+<hr />
+<h3 id="initialuivalues">InitialUIValues</h3>
+<p>• <strong>InitialUIValues</strong>: Interface InitialUIValues</p>
+<p>The init() return values, that determine what variant and layer should be shown</p>
+<h4 id="defined-in_60">Defined in</h4>
+<p>interfaces.ts:23</p>
+<hr />
+<h3 id="language">Language</h3>
+<p>• <strong>Language</strong>: Interface Language</p>
+<h4 id="defined-in_61">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:18</p>
+<hr />
+<h3 id="languageconfig">LanguageConfig</h3>
+<p>• <strong>LanguageConfig</strong>: Interface LanguageConfig</p>
+<h4 id="defined-in_62">Defined in</h4>
+<p>services/SettingsV2/Core/interfaces.ts:1</p>
+<hr />
+<h3 id="layercustomization">LayerCustomization</h3>
+<p>• <strong>LayerCustomization</strong>: Interface LayerCustomization</p>
+<h4 id="defined-in_63">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:55</p>
+<hr />
+<h3 id="linkcustomization">LinkCustomization</h3>
+<p>• <strong>LinkCustomization</strong>: Interface LinkCustomization</p>
+<h4 id="defined-in_64">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:60</p>
+<hr />
+<h3 id="logocustomization">LogoCustomization</h3>
+<p>• <strong>LogoCustomization</strong>: Interface LogoCustomization</p>
+<h4 id="defined-in_65">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:67</p>
+<hr />
+<h3 id="overlaycustomization">OverlayCustomization</h3>
+<p>• <strong>OverlayCustomization</strong>: Interface OverlayCustomization</p>
+<h4 id="defined-in_66">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:73</p>
+<hr />
+<h3 id="poweredby">PoweredBy</h3>
+<p>• <strong>PoweredBy</strong>: Interface PoweredBy</p>
+<h4 id="defined-in_67">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:107</p>
+<hr />
+<h3 id="privacybutton">PrivacyButton</h3>
+<p>• <strong>PrivacyButton</strong>: Interface PrivacyButton</p>
+<h4 id="defined-in_68">Defined in</h4>
+<p>services/SettingsV2/Core/interfaces.ts:8</p>
+<hr />
+<h3 id="privacybuttonui">PrivacyButtonUI</h3>
+<p>• <strong>PrivacyButtonUI</strong>: Interface PrivacyButtonUI</p>
+<h4 id="defined-in_69">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:204</p>
+<hr />
+<h3 id="processingcompany">ProcessingCompany</h3>
+<p>• <strong>ProcessingCompany</strong>: Interface ProcessingCompany</p>
+<h4 id="defined-in_70">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:23</p>
+<hr />
+<h3 id="resurfaceoptions">ResurfaceOptions</h3>
+<p>• <strong>ResurfaceOptions</strong>: Interface ResurfaceOptions</p>
+<h4 id="defined-in_71">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:22</p>
+<hr />
+<h3 id="savebuttoncustomization">SaveButtonCustomization</h3>
+<p>• <strong>SaveButtonCustomization</strong>: Interface SaveButtonCustomization</p>
+<h4 id="defined-in_72">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:23</p>
+<hr />
+<h3 id="secondlayerconfig">SecondLayerConfig</h3>
+<p>• <strong>SecondLayerConfig</strong>: Interface SecondLayerConfig</p>
+<h4 id="defined-in_73">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:140</p>
+<hr />
+<h3 id="service">Service</h3>
+<p>• <strong>Service</strong>: Interface Service</p>
+<h4 id="defined-in_74">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:33</p>
+<hr />
+<h3 id="servicehasharrayobject">ServiceHashArrayObject</h3>
+<p>• <strong>ServiceHashArrayObject</strong>: Interface ServiceHashArrayObject</p>
+<h4 id="defined-in_75">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:12</p>
+<hr />
+<h3 id="settings">Settings</h3>
+<p>• <strong>Settings</strong>: Interface Settings</p>
+<h4 id="defined-in_76">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:104</p>
+<hr />
+<h3 id="showsecondlayerbutton">ShowSecondLayerButton</h3>
+<p>• <strong>ShowSecondLayerButton</strong>: Interface ShowSecondLayerButton</p>
+<h4 id="defined-in_77">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ui.public.ts:158</p>
+<hr />
+<h3 id="tcfbuttonsconfig">TCFButtonsConfig</h3>
+<p>• <strong>TCFButtonsConfig</strong>: Interface TCFButtonsConfig</p>
+<h4 id="defined-in_78">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:103</p>
+<hr />
+<h3 id="tcfchangedpurposes">TCFChangedPurposes</h3>
+<p>• <strong>TCFChangedPurposes</strong>: Interface TCFChangedPurposes</p>
+<h4 id="defined-in_79">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:17</p>
+<hr />
+<h3 id="tcfdata">TCFData</h3>
+<p>• <strong>TCFData</strong>: Interface TCFData</p>
+<p>A wrapper for all the data that needs to be disclosed to the end-user if TCF is enabled</p>
+<h4 id="defined-in_80">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:109</p>
+<hr />
+<h3 id="tcffirstlayerconfig">TCFFirstLayerConfig</h3>
+<p>• <strong>TCFFirstLayerConfig</strong>: Interface TCFFirstLayerConfig</p>
+<h4 id="defined-in_81">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:131</p>
+<hr />
+<h3 id="tcflabels">TCFLabels</h3>
+<p>• <strong>TCFLabels</strong>: Interface TCFLabels</p>
+<h4 id="defined-in_82">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:78</p>
+<hr />
+<h3 id="tcfoptions">TCFOptions</h3>
+<p>• <strong>TCFOptions</strong>: Interface TCFOptions</p>
+<h4 id="defined-in_83">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:21</p>
+<hr />
+<h3 id="tcfpurpose">TCFPurpose</h3>
+<p>• <strong>TCFPurpose</strong>: Interface TCFPurpose</p>
+<p>A TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.</p>
+<h4 id="defined-in_84">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:61</p>
+<hr />
+<h3 id="tcfsecondlayerconfig">TCFSecondLayerConfig</h3>
+<p>• <strong>TCFSecondLayerConfig</strong>: Interface TCFSecondLayerConfig</p>
+<h4 id="defined-in_85">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:160</p>
+<hr />
+<h3 id="tcfspecialfeature">TCFSpecialFeature</h3>
+<p>• <strong>TCFSpecialFeature</strong>: Interface TCFSpecialFeature</p>
+<p>A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent.</p>
+<h4 id="defined-in_86">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:80</p>
+<hr />
+<h3 id="tcfstack">TCFStack</h3>
+<p>• <strong>TCFStack</strong>: Interface TCFStack</p>
+<p>A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
+first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.</p>
+<h4 id="defined-in_87">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:95</p>
+<hr />
+<h3 id="tcfuisettings">TCFUISettings</h3>
+<p>• <strong>TCFUISettings</strong>: Interface TCFUISettings</p>
+<h4 id="defined-in_88">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:93</p>
+<hr />
+<h3 id="tcfuserdecisiononpurpose">TCFUserDecisionOnPurpose</h3>
+<p>• <strong>TCFUserDecisionOnPurpose</strong>: Interface TCFUserDecisionOnPurpose</p>
+<p>A user's consent decision for a single purpose</p>
+<h4 id="defined-in_89">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.decisions.public.ts:14</p>
+<hr />
+<h3 id="tcfuserdecisiononvendor">TCFUserDecisionOnVendor</h3>
+<p>• <strong>TCFUserDecisionOnVendor</strong>: Interface TCFUserDecisionOnVendor</p>
+<p>A user's consent decision for a single vendor</p>
+<h4 id="defined-in_90">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.decisions.public.ts:23</p>
+<hr />
+<h3 id="tcfuserdecisions">TCFUserDecisions</h3>
+<p>• <strong>TCFUserDecisions</strong>: Interface TCFUserDecisions</p>
+<p>A user's consent decision on all TCF options</p>
+<h4 id="defined-in_91">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.decisions.public.ts:4</p>
+<hr />
+<h3 id="tcfvendor">TCFVendor</h3>
+<p>• <strong>TCFVendor</strong>: Interface TCFVendor</p>
+<p>A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
+A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.</p>
+<h4 id="defined-in_92">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:135</p>
+<hr />
+<h3 id="tcfvendorrestriction">TCFVendorRestriction</h3>
+<p>• <strong>TCFVendorRestriction</strong>: Interface TCFVendorRestriction</p>
+<p>A TCF vendor restriction for a flexible purpose</p>
+<h4 id="defined-in_93">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:178</p>
+<hr />
+<h3 id="tcfui">TcfUI</h3>
+<p>• <strong>TcfUI</strong>: Interface TcfUI</p>
+<h4 id="defined-in_94">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:198</p>
+<hr />
+<h3 id="tcfuisettingslabels">TcfUISettingsLabels</h3>
+<p>• <strong>TcfUISettingsLabels</strong>: Interface TcfUISettingsLabels</p>
+<h4 id="defined-in_95">Defined in</h4>
+<p>services/SettingsV2/Labels/interfaces.ts:261</p>
+<hr />
+<h3 id="togglecustomization">ToggleCustomization</h3>
+<p>• <strong>ToggleCustomization</strong>: Interface ToggleCustomization</p>
+<h4 id="defined-in_96">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:78</p>
+<hr />
+<h3 id="trackeventparameters">TrackEventParameters</h3>
+<p>• <strong>TrackEventParameters</strong>: Interface TrackEventParameters</p>
+<h4 id="defined-in_97">Defined in</h4>
+<p>services/DataFacade/interfaces/interfaces.public.ts:23</p>
+<hr />
+<h3 id="urls">URLs</h3>
+<p>• <strong>URLs</strong>: Interface URLs</p>
+<h4 id="defined-in_98">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:29</p>
+<hr />
+<h3 id="usercountrydata">UserCountryData</h3>
+<p>• <strong>UserCountryData</strong>: Interface UserCountryData</p>
+<h4 id="defined-in_99">Defined in</h4>
+<p>services/Location/interfaces/interfaces.public.ts:1</p>
+<hr />
+<h3 id="userdecision">UserDecision</h3>
+<p>• <strong>UserDecision</strong>: Interface UserDecision</p>
+<p>A user's consent decision for a single service</p>
+<h4 id="defined-in_100">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:4</p>
+<hr />
+<h3 id="usersessiondata">UserSessionData</h3>
+<p>• <strong>UserSessionData</strong>: Interface UserSessionData</p>
+<h4 id="defined-in_101">Defined in</h4>
+<p>services/DataFacade/interfaces/interfaces.public.ts:16</p>
+<h2 id="type-aliases_1">Type aliases</h2>
+<h3 id="arialabelstranslation">AriaLabelsTranslation</h3>
+<p>Ƭ <strong>AriaLabelsTranslation</strong>: LegacyAriaLabelsTranslations</p>
+<h4 id="defined-in_102">Defined in</h4>
+<p>services/Api/interfaces/interfaces.legacy.ts:111</p>
+<hr />
+<h3 id="baseservice">BaseService</h3>
+<p>Ƭ <strong>BaseService</strong>: BaseServiceData &amp; ServiceLabels</p>
+<h4 id="defined-in_103">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:32</p>
+<hr />
+<h3 id="ccpabuttoncustomization">CcpaButtonCustomization</h3>
+<p>Ƭ <strong>CcpaButtonCustomization</strong>: SaveButtonCustomization</p>
+<h4 id="defined-in_104">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:27</p>
+<hr />
+<h3 id="cornerposition">CornerPosition</h3>
+<p>Ƭ <strong>CornerPosition</strong>: "tl" | "tr" | "bl" | "br"</p>
+<h4 id="defined-in_105">Defined in</h4>
+<p>services/SettingsV2/Core/interfaces.ts:6</p>
+<hr />
+<h3 id="data">Data</h3>
+<p>Ƭ <strong>Data</strong>: DefaultData | CcpaData | TcfData</p>
+<h4 id="defined-in_106">Defined in</h4>
+<p>services/SettingsV2/Data/interfaces.ts:115</p>
+<hr />
+<h3 id="defaultbuttonsconfig">DefaultButtonsConfig</h3>
+<p>Ƭ <strong>DefaultButtonsConfig</strong>: ButtonsCustomization &amp; DefaultButtonsCustomization</p>
+<h4 id="defined-in_107">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:101</p>
+<hr />
+<h3 id="labels">Labels</h3>
+<p>Ƭ <strong>Labels</strong>: CcpaLabels | DefaultLabels | TcfUISettingsLabels</p>
+<h4 id="defined-in_108">Defined in</h4>
+<p>services/SettingsV2/Labels/interfaces.ts:270</p>
+<hr />
+<h3 id="logoposition">LogoPosition</h3>
+<p>Ƭ <strong>LogoPosition</strong>: "center" | "left" | "right"</p>
+<h4 id="defined-in_109">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.default.public.ts:11</p>
+<hr />
+<h3 id="maybe">Maybe</h3>
+<p>Ƭ <strong>Maybe</strong>: T | null | undefined</p>
+<h4 id="type-parameters">Type parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="defined-in_110">Defined in</h4>
+<p>services/SettingsV2/interfaces/interfaces.ts:44</p>
+<hr />
+<h3 id="maybebutton">MaybeButton</h3>
+<p>Ƭ <strong>MaybeButton</strong>: ButtonColor | null</p>
+<h4 id="defined-in_111">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:21</p>
+<hr />
+<h3 id="secondlayerurl">SecondLayerUrl</h3>
+<p>Ƭ <strong>SecondLayerUrl</strong>: string</p>
+<h4 id="defined-in_112">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:14</p>
+<hr />
+<h3 id="tcffeature">TCFFeature</h3>
+<p>Ƭ <strong>TCFFeature</strong>: BasePurpose</p>
+<p>A TCF feature that needs to be disclosed to the end-user.</p>
+<h4 id="defined-in_113">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:58</p>
+<hr />
+<h3 id="tcfspecialpurpose">TCFSpecialPurpose</h3>
+<p>Ƭ <strong>TCFSpecialPurpose</strong>: BasePurpose</p>
+<p>A TCF special purpose that needs to be disclosed to the end-user.</p>
+<h4 id="defined-in_114">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:77</p>
+<hr />
+<h3 id="tcfuserdecisiononspecialfeature">TCFUserDecisionOnSpecialFeature</h3>
+<p>Ƭ <strong>TCFUserDecisionOnSpecialFeature</strong>: BaseTCFUserDecision</p>
+<p>A user's consent decision for a single special feature</p>
+<h4 id="defined-in_115">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.decisions.public.ts:20</p>
+<hr />
+<h3 id="tcfvendorrestrictiontype">TCFVendorRestrictionType</h3>
+<p>Ƭ <strong>TCFVendorRestrictionType</strong>: RestrictionType</p>
+<h4 id="defined-in_116">Defined in</h4>
+<p>services/SettingsV2/interfaces/TCF/interfaces.public.ts:55</p>
+<hr />
+<h3 id="tcfbuttonscustomization">TcfButtonsCustomization</h3>
+<p>Ƭ <strong>TcfButtonsCustomization</strong>: CommonButtonsCustomization</p>
+<h4 id="defined-in_117">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:38</p>
+<hr />
+<h3 id="ui">UI</h3>
+<p>Ƭ <strong>UI</strong>: CcpaUI | DefaultUI | TcfUI | PrivacyButtonUI</p>
+<h4 id="defined-in_118">Defined in</h4>
+<p>services/SettingsV2/UI/interfaces.ts:213</p>
+<hr />
+<h3 id="uisettings">UISettings</h3>
+<p>Ƭ <strong>UISettings</strong>: CcpaUISettings | DefaultUISettings | TCFUISettings</p>
+<h4 id="defined-in_119">Defined in</h4>
+<p>services/Settings/interfaces/interfaces.ts:102</p>
+<h2 id="functions_1">Functions</h2>
+<h3 id="isccpadata">isCcpaData</h3>
+<p>▸ <code>Const</code> <strong>isCcpaData</strong>(<code>data</code>): data is CcpaData</p>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left">Maybe&lt;Data></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns</h4>
+<p>data is CcpaData</p>
+<h4 id="defined-in_120">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:210</p>
+<hr />
+<h3 id="isccpalabels">isCcpaLabels</h3>
+<p>▸ <code>Const</code> <strong>isCcpaLabels</strong>(<code>labels</code>): labels is CcpaLabels</p>
+<h4 id="parameters_1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>labels</code></td>
+<td align="left">Maybe&lt;Labels></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns</h4>
+<p>labels is CcpaLabels</p>
+<h4 id="defined-in_121">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:222</p>
+<hr />
+<h3 id="isccpaui">isCcpaUI</h3>
+<p>▸ <code>Const</code> <strong>isCcpaUI</strong>(<code>ui</code>): ui is CcpaUI</p>
+<h4 id="parameters_2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ui</code></td>
+<td align="left">Maybe&lt;UI></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns</h4>
+<p>ui is CcpaUI</p>
+<h4 id="defined-in_122">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:234</p>
+<hr />
+<h3 id="isdefaultdata">isDefaultData</h3>
+<p>▸ <code>Const</code> <strong>isDefaultData</strong>(<code>data</code>): data is DefaultData</p>
+<h4 id="parameters_3">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left">Maybe&lt;Data></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns</h4>
+<p>data is DefaultData</p>
+<h4 id="defined-in_123">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:218</p>
+<hr />
+<h3 id="isdefaultlabels">isDefaultLabels</h3>
+<p>▸ <code>Const</code> <strong>isDefaultLabels</strong>(<code>labels</code>): labels is DefaultLabels</p>
+<h4 id="parameters_4">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>labels</code></td>
+<td align="left">Maybe&lt;Labels></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns</h4>
+<p>labels is DefaultLabels</p>
+<h4 id="defined-in_124">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:230</p>
+<hr />
+<h3 id="isdefaultui">isDefaultUI</h3>
+<p>▸ <code>Const</code> <strong>isDefaultUI</strong>(<code>ui</code>): ui is DefaultUI</p>
+<h4 id="parameters_5">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ui</code></td>
+<td align="left">Maybe&lt;UI></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns</h4>
+<p>ui is DefaultUI</p>
+<h4 id="defined-in_125">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:246</p>
+<hr />
+<h3 id="isprivacybuttonui">isPrivacyButtonUI</h3>
+<p>▸ <code>Const</code> <strong>isPrivacyButtonUI</strong>(<code>ui</code>): ui is PrivacyButtonUI</p>
+<h4 id="parameters_6">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ui</code></td>
+<td align="left">Maybe&lt;UI></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns</h4>
+<p>ui is PrivacyButtonUI</p>
+<h4 id="defined-in_126">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:250</p>
+<hr />
+<h3 id="istcfdata">isTcfData</h3>
+<p>▸ <code>Const</code> <strong>isTcfData</strong>(<code>data</code>): data is TcfData</p>
+<h4 id="parameters_7">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left">Maybe&lt;Data></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns</h4>
+<p>data is TcfData</p>
+<h4 id="defined-in_127">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:214</p>
+<hr />
+<h3 id="istcflabels">isTcfLabels</h3>
+<p>▸ <code>Const</code> <strong>isTcfLabels</strong>(<code>labels</code>): labels is TcfUISettingsLabels</p>
+<h4 id="parameters_8">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>labels</code></td>
+<td align="left">Maybe&lt;Labels></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns</h4>
+<p>labels is TcfUISettingsLabels</p>
+<h4 id="defined-in_128">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:226</p>
+<hr />
+<h3 id="istcfui">isTcfUI</h3>
+<p>▸ <code>Const</code> <strong>isTcfUI</strong>(<code>ui</code>): ui is TcfUI</p>
+<h4 id="parameters_9">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>ui</code></td>
+<td align="left">Maybe&lt;UI></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns</h4>
+<p>ui is TcfUI</p>
+<h4 id="defined-in_129">Defined in</h4>
+<p>services/SettingsV2/helpers.ts:242</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      © Copyright 2022 Usercentrics GmbH
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "navigation.sections", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1514a9a0.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
